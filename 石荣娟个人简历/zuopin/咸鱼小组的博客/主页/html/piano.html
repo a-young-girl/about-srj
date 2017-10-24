@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>钢琴块</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src = "../jquery-2.1.4/dist/jquery.js" ></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #main {
+            width: 400px;
+            height: 600px;
+            /* background: yellow; */
+            border: 5px solid gray;
+            border-radius: 10px 10px 0 0;
+            position: relative;
+            margin: 0 auto;
+            top: 80px;
+            overflow: hidden;
+            z-index:5;
+        }
+
+        #move {
+            /* border:1px solid black; */
+            width: 400px;
+            position: absolute;
+
+            top: -100px;
+        }
+
+        .movebaby {
+            width: 80px;
+            height: 100px;
+            /* border:1px solid black; */
+            /* background: yellow; */
+            float: left;
+            box-sizing: border-box;
+            /* position: absolute; */
+        }
+
+        .movefather {
+            width: 400px;
+            height: 100px;
+            /* border:1px solid black; */
+            /* position: absolute; */
+        }
+
+        .radom {
+            width: 80px;
+            height: 100px;
+            border: 0.5px solid gray;
+            border-top: none;
+            border-bottom: none;
+            /* background: blue; */
+            float: left;
+            box-sizing: border-box;
+        }
+
+        .begin {
+            display: block;
+            width: 410px;
+            height: 50px;
+
+            margin: 0 auto;
+            position: relative;
+            top: 80px;
+            border: 5px solid black;
+            border-top: none;
+            background: #a0cec8;
+            border-radius: 0 0 10px 10px;
+            z-index: 5;
+        }
+        .mask{
+            width: 405px;
+            height: 650px;
+            border:1px solid black;
+            margin: 0 auto;
+            position: relative;
+            top:-575px;
+            border-radius:10px;
+            background:rgba(0,0,0,0.5) ;
+            /* opacity: 0.5; */
+            z-index: 6;
+        }
+       #span1{
+        width: 200px;
+        height: 100px;
+        /* border:1px solid black; */
+        display: block;
+        position: absolute;
+        left:100px;
+        top:100px;
+        opacity: 1;
+        font-size: 80px;
+        text-align: center;
+        line-height: 100px;
+        color: white;
+       }
+        #span2{
+        width: 150px;
+        height: 50px;
+        /* border:1px solid black; */
+         display: block;
+         position: absolute;
+         left:125px;
+         top:200px;
+         font-size: 30px;
+        text-align: center;
+        line-height: 50px;
+        color: white;
+       }
+         #span3{
+        width: 150px;
+        height: 50px;
+        /* border:1px solid black; */
+         display: block;
+         position: absolute;
+         left:125px;
+         top:300px;
+          font-size: 20px;
+        text-align: center;
+        line-height: 50px;
+        color: white;
+       }
+        #span4{
+        width: 150px;
+        height: 50px;
+        /* border:1px solid black; */
+         display: block;
+         position: absolute;
+         left:125px;
+         top:400px;
+          font-size: 16px;
+        text-align: center;
+        line-height: 50px;
+        color: white;
+       }
+       #score{
+            width: 150px;
+        height: 50px;
+        /* border:1px solid black; */
+         display: block;
+         position: absolute;
+         left:125px;
+         top:350px;
+          font-size: 16px;
+        text-align: center;
+        line-height: 50px;
+        color: white;
+       }
+         #topscore{
+            width: 150px;
+        height: 50px;
+        /* border:1px solid black; */
+         display: block;
+         position: absolute;
+         left:125px;
+         top:450px;
+          font-size: 16px;
+        text-align: center;
+        line-height: 50px;
+        color: white;
+       }
+       #button{
+            width: 100px;
+            height: 30px;
+            /* border:1px solid black; */
+            color:white;
+            font-size: 20px;
+            position: absolute;
+            left:150px;
+            top:550px;
+            text-align: center;
+            line-height: 30px;
+
+       }
+    </style>
+</head>
+
+<body>
+
+    <div id="main">
+        <div id="move"></div>
+    </div>
+    <button type="button" class="begin">开始游戏</button>
+    <div class="" id="mask">
+        <span id="span1">sorry</span>
+        <span id="span2">游戏结束</span>
+        <span id="span3">您的得分为</span>
+        <span id="score"></span>
+        <span id="span4">您的历史最高分为</span>
+        <span id="topscore" ></span>
+        <span id="button">重新开始</span>
+    </div>
+    <script>
+        window.onload = function () {
+            var omask = document.getElementById("mask");
+            var odiv = document.getElementById("move");
+            var colorarr = ['#14cc5f', '#14ccc0', '#6214cc', '#14ccc0', '#14cc5f'];
+            var obtn = document.getElementsByTagName("button");
+            var oscore = document.getElementById("score");
+            var otopscore = document.getElementById("topscore");
+            var obtn1 = document.getElementById("button");
+            function createle() {
+                var radom = Math.floor(Math.random() * 5);
+                // alert(radom);
+                var bigdiv = document.createElement("div");
+                bigdiv.className = 'movefather';
+                for (var i = 0; i < 5; i++) {
+                    var litdiv = document.createElement("div");
+                    litdiv.className = 'movebaby';
+                    bigdiv.appendChild(litdiv);
+                }
+
+                if (odiv.children.length > 0) {
+                    odiv.insertBefore(bigdiv, odiv.children[0]);
+                } else {
+                    odiv.appendChild(bigdiv);
+                }
+                // alert(bigdiv.children.length);
+                bigdiv.children[radom].style.backgroundColor = colorarr[radom];
+                bigdiv.children[radom].className = "radom";
+            }
+            var timer = null;
+            var create = null;
+            var count = null;
+            var oldscore = null;
+            obtn[0].onclick = function () {
+                var speed = 4;
+                var oitem = document.getElementsByClassName("radom");
+                clearInterval(timer);
+                // clearInterval(create);
+                timer = setInterval(function () {
+                    if (odiv.offsetTop > 0) {
+                        createle();
+                        odiv.style.top = -100 + "px";
+                        count = odiv.children.length;
+                        console.log(count);
+                        if (count % 10 == 0) {
+                            speed++;
+                        }
+                        for (var i = 0; i < oitem.length; i++) {
+
+                            if (oitem[i].offsetTop > 600) {
+                                clearInterval(timer);
+                                omask.className = "mask";
+                                // alert(oscore.innerHTML)
+                                // count = count-8;
+                                oldscore = parseFloat(otopscore.innerHTML)||count;
+                                if(oscore.innerHTML == null){
+                                oscore.innerHTML = count+"分";
+                                otopscore.innerHTML = count + "分"; 
+                                }else if(count>oldscore){
+                                      oscore.innerHTML = count + "分";
+                                   otopscore.innerHTML = count + "分"; 
+                                }else{
+                                    oscore.innerHTML = count + "分";
+                                    otopscore.innerHTML = oldscore + "分"; 
+                                }
+                               
+                                obtn1.onclick = function(){
+                                    omask.className = "";
+                                     odiv.innerHTML = '';
+
+                                }
+
+                            }
+                            oitem[i].onclick = function () {
+                                this.className = "movebaby";
+                                this.style.backgroundColor = "gray";
+                            }
+                        }
+                    }
+                    odiv.style.top = odiv.offsetTop + speed + 'px';
+                }, 30);
+                return false;
+            }
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我们的博客</title>
+	<link rel="shortcut icon" href="fff.ico">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 最新版本的浏览器渲染模式 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <!-- 约束视口：980 设备宽度、初始化缩放比、用户不可缩放-->
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+
+
+    <!-- 引入Bootstrap核心样式文件（必须） -->
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- 引入自定义样式表 -->
+    <link rel="stylesheet" href="css/zy.css">
+    <!-- html5shiv对H5标签的兼容 -->
+    <!--  Respond.js对响应式的兼容-->
+    <!-- 条件注释:h5兼容性，响应式兼容 -->
+    <!--[if lt IE 9]>
+      <script src="lib/html5shiv/html5shiv.min.js"></script>
+      <script src="lib/respond/respond.min.js"></script>
+    <![endif]-->
+	<script src="js/data.js" ></script>
+	<script>
+
+	</script>
+	<script>
+		window.onload=function(){
+			var aul=document.getElementById('aaaul');
+			var ali=aul.getElementsByTagName('li');
+			var datas=data.files;
+			var aahh=document.getElementById('aahh');
+			var aah3=aahh.getElementsByTagName('h3')[0];
+			var aaul=document.getElementById('html');
+			var aali=aaul.getElementsByTagName('li');
+			var aasp=aahh.getElementsByTagName('span');
+			
+			var pid=0;
+			addLi(pid);
+		//课程案例切换
+			for(var i = 0; i < aali.length; i++){
+				aali[i].index=i;
+				aali[i].onclick=function(){
+					
+					pid=this.index;
+					// alert(pid);
+					addLi(pid);
+				};
+			}
+
+			aasp[0].onclick=function(){
+				pid++;
+				pid%=aali.length;
+				addLi(pid);
+			};
+			aasp[1].onclick=function(){
+				pid--;
+				if (pid<0) {pid=aali.length-1}
+				addLi(pid);
+			};
+
+			function addLi(pid){
+				for (var i = 0; i < aali.length; i++) {
+					aali[i].className='';
+				}
+				aali[pid].className='active';
+				aul.innerHTML='';
+				for (var i = 0; i < datas.length; i++) {
+						if(datas[i].pid==pid)
+						aul.innerHTML+='<li><p>'+datas[i].title+'</p>'+datas[i].type+'</li>';
+					}
+			}
+		//头部固定
+			window.onscroll=function(){
+				
+				if(document.body.scrollTop||document.documentElement.scrollTop>300){
+					document.getElementById('article').style.display='block';
+					for (var i = 0; i < ali.length; i++) {
+						ali[i].style.transform='translateY(0)';
+					}
+					
+				}else
+					document.getElementById('article').style.display='none';
+			};
+			
+		}
+	
+	</script>
+</head>
+<body>
+	<!-- guanggao (jquery实现 见js/main.js)-->
+	<div id="right" class="right">
+	    <div class="dd_close" id="dd_close"><a href="javascript:void(0);">关闭</a></div>
+	    <p>咸鱼小组</p>
+	    <img src="img/erweima.png" id="right1" />
+	    <p>今日咸鱼身,</p>
+	    <p>来日跃龙门。</p>
+	</div>
+	<!-- header -->
+	<header>
+		<div class="topbar hidden-xs hidden-sm ">
+	      <div class="container">
+	        <div class="row">
+	          <div class="col-md-4 col-lg-4">
+	            <a href="">
+	              <!-- <img src="img/fish.png" alt="1"> -->
+	              我们的博客
+	            </a>
+	          </div>
+		 	  <div class="col-md-2 col-lg-2 text-center"> 
+	            <a href="../主页/html/indexBlogMian.html">首页</a> 
+	          </div>
+	          <div class="col-md-2 col-lg-2 text-center"> 
+	            <a href="../小组博客/about.html">关于我们</a>
+	          </div>
+	          <div class="col-md-4 col-lg-4 text-center">
+		        <button type="button" class="btn btn-danger btn-xm">登录</button>
+	            <button type="button" class="btn btn-reg btn-xm">免费注册</button>
+	          </div>
+	        </div>
+	      </div>
+      </div>
+	</header>
+	<!-- section -->
+	<section>
+		<!-- 图片（字）切换 (js实现 见body标签下的script) -->
+		<div id='pic'>
+			<div>
+				<img src="img/fish.png" alt="">
+				<h3>想 出 头 的 咸 鱼 小 组</h3>
+				<h5>一 个 很 牛 b 的 小 组</h5>
+			</div>
+			<a id="btnl" href="javascript:;">&lt;</a>
+			<a id="btnr" href="javascript:void(0);">&gt;</a>
+		</div>
+		<div id="aaa" class="container">
+			<div id="aahh">
+				<!-- 内容的切换 (js实现 见head标签里面的script) -->
+				<h3>课堂笔记</h3>
+				<ul id="html">
+					<li>html5与css3</li>
+					<li>JSON的特点</li>
+					<li>面向对象编程</li>
+					<li>正则的几个方法</li>
+					<li>other</li>
+				</ul>
+				<ul id="aaaul">
+				</ul>
+				<span>&gt;</span><span>&lt;</span>
+
+			</div>
+			<div id="bbb" class="container">
+				<!-- 选项卡切换 (jquery实现 见js/zyxxk.js) -->
+				<h3>课堂案例</h3>
+				<div id="div2">
+					<input class="active" type="button" value="1">
+					<input type="button" value="2">
+					<input type="button" value="3">
+				    <div style="display:block">
+				    	<a href="project/16面向对象的拖拽.html"><p>面向对象的拖拽</p></a>
+						<a href="project/txwy/index.html"><p>腾讯微云桌面</p></a>
+						<a href="project/15面向对象的选项卡.html"><p>面向对象的选项卡</p></a>
+						<a href="project/weijinsuo/index.html"><p>微金所</p></a>
+						<a href="project/txwy/index.html"><p>腾讯微云桌面</p></a>
+						<a href="project/15面向对象的选项卡.html"><p>面向对象的选项卡</p></a>
+						<a href="project/weijinsuo/index.html"><p>微金所</p></a>
+						<a href="project/16面向对象的拖拽.html"><p>面向对象的拖拽</p></a>
+						<a href="project/txwy/index.html"><p>腾讯微云桌面</p></a>
+						<a href="project/15面向对象的选项卡.html"><p>面向对象的选项卡</p></a>
+						<a href="project/weijinsuo/index.html"><p>微金所</p></a>
+						<a href="project/txwy/index.html"><p>腾讯微云桌面</p></a>
+						<a href="project/15面向对象的选项卡.html"><p>面向对象的选项卡</p></a>
+						<a href="project/weijinsuo/index.html"><p>微金所</p></a>
+				    </div>
+				    <div>
+						<a href="project/txwy/index.html"><p>腾讯微云桌面</p></a>
+						<a href="project/15面向对象的选项卡.html"><p>面向对象的选项卡</p></a>
+						<a href="project/16面向对象的拖拽.html"><p>面向对象的拖拽</p></a>
+						<a href="project/weijinsuo/index.html"><p>微金所</p></a>
+						<a href="project/txwy/index.html"><p>腾讯微云桌面</p></a>
+						<a href="project/15面向对象的选项卡.html"><p>面向对象的选项卡</p></a>
+						<a href="project/16面向对象的拖拽.html"><p>面向对象的拖拽</p></a>
+						<a href="project/weijinsuo/index.html"><p>微金所</p></a>
+						<a href="project/16面向对象的拖拽.html"><p>面向对象的拖拽</p></a>
+						<a href="project/weijinsuo/index.html"><p>微金所</p></a>
+						<a href="project/txwy/index.html"><p>腾讯微云桌面</p></a>
+						<a href="project/15面向对象的选项卡.html"><p>面向对象的选项卡</p></a>
+						<a href="project/16面向对象的拖拽.html"><p>面向对象的拖拽</p></a>
+						<a href="project/weijinsuo/index.html"><p>微金所</p></a>
+				    </div>
+				    <div>
+				    	<a href="project/weijinsuo/index.html"><p>微金所</p></a>
+						<a href="project/txwy/index.html"><p>腾讯微云桌面</p></a>
+						<a href="project/15面向对象的选项卡.html"><p>面向对象的选项卡</p></a>
+						<a href="project/16面向对象的拖拽.html"><p>面向对象的拖拽</p></a>
+						<a href="project/txwy/index.html"><p>腾讯微云桌面</p></a>
+						<a href="project/15面向对象的选项卡.html"><p>面向对象的选项卡</p></a>
+						<a href="project/16面向对象的拖拽.html"><p>面向对象的拖拽</p></a>
+						<a href="project/weijinsuo/index.html"><p>微金所</p></a>
+						<a href="project/txwy/index.html"><p>腾讯微云桌面</p></a>
+						<a href="project/15面向对象的选项卡.html"><p>面向对象的选项卡</p></a>
+						<a href="project/16面向对象的拖拽.html"><p>面向对象的拖拽</p></a>
+						<a href="project/weijinsuo/index.html"><p>微金所</p></a>
+						
+				    </div>
+				    
+				</div>
+			</div>
+		</div>
+		
+		<div id="ccc" class="container">
+			<!-- 图片放大 (css实现 见css/zy.css) -->
+			<h3>小游戏</h3>
+			<div class="row">
+				<!-- <h5>本人游戏</h5> -->
+				<div class="biankuang" >
+					<div>
+						<img src="img/zy.jpg" alt="">
+					</div>
+					<h4>项目介绍</h4>
+					<p>项目名称：<span>智能拼图</span></p>
+					<p>项目负责人：<span>朱勇</span></p>
+					<p>项目简介：<span>无</span></p>
+					<a href="game/znpt.html">开始</a>
+				</div>
+				<div class="biankuang">
+					<div>
+						<img src="img/tcs.png" alt="">
+					</div>
+					<h4>项目介绍</h4>
+					<p>项目名称：<span>贪吃蛇</span></p>
+					<p>项目负责人：<span>匿名</span></p>
+					<p>项目简介：<span>无</span></p>
+					<a href="game/tcs.html">开始</a>			
+				</div>
+				<div class="biankuang">
+					<div>
+						<img src="img/qqxx.png" alt="">
+					</div>
+					<h4>项目介绍</h4>
+					<p>项目名称：<span>行星自转</span></p>
+					<p>项目负责人：<span>邱谦</span></p>
+					<p>项目简介：<span>无</span></p>
+					<a href="game/行星自转/胸怀宇宙孙连城2.0.html">开始</a>			
+				</div>
+				<div class="biankuang">
+					<div>
+						<img src="img/canvas.png" alt="">
+					</div>
+					<h4>项目介绍</h4>
+					<p>项目名称：<span>canvas黑客帝国代码雨特效</span></p>
+					<p>项目负责人：<span>匿名</span></p>
+					<p>项目简介：<span>无</span></p>
+					<a href="game/canvas.html">开始</a>			
+				</div>
+				<div class="biankuang">
+					<div>
+						<img src="img/five.png" alt="">
+					</div>
+					<h4>项目介绍</h4>
+					<p>项目名称：<span>五子棋</span></p>
+					<p>项目负责人：<span>匿名</span></p>
+					<p>项目简介：<span>无</span></p>
+					<a href="game/five.html">开始</a>			
+				</div>
+			</div>
+		</div>
+		<div id="ddd" class="container">
+			<!-- 内容显示 (jquery实现 见js/main.js) -->
+			<h3>前端面试题</h3>
+			<div class="row">
+				<div class="main col-md-4 col-lg-4">
+					<div>对WEB标准以及W3C的理解与认识<p>&nbsp;&nbsp;&nbsp;
+					标签闭合、标签小写、不乱嵌套、提高搜索机器人搜索几率、使用外 链css和js脚本、结构行为表现的分离、文件下载与页面速度更快、内容能被更多的用户所访问、内容能被更广泛的设备所访问、更少的代码和组件，容易维 护、改版方便，不需要变动页面内容、提供打印版本而不需要复制内容、提高网站易用性；</p>
+					</div>
+					<div>xhtml和html有什么区别<p>&nbsp;&nbsp;&nbsp;
+					HTML是一种基本的WEB网页设计语言，XHTML是一个基于XML的置标语言
+					最主要的不同：
+					XHTML 元素必须被正确地嵌套。
+					XHTML 元素必须被关闭。
+					标签名必须用小写字母。
+					XHTML 文档必须拥有根元素。</p>
+					</div>
+					<div>Doctype? 严格模式与混杂模式-如何触发这两种模式，区分它们有何意义?<p> &nbsp;&nbsp;&nbsp;
+					用于声明文档使用那种规范（html/Xhtml）一般为 严格 过度 基于框架的html文档
+					加入XMl声明可触发，解析方式更改为IE5.5 拥有IE5.5的bug</p>
+					</div>
+				</div>
+				<div class="main col-md-4 col-lg-4">
+					<div>行内元素有哪些?块级元素有哪些?CSS的盒模型?<p>&nbsp;&nbsp;&nbsp;
+					块级元素：div p h1 h2 h3 h4 form ul
+					行内元素: a b br i span input select
+					Css盒模型:内容，border ,margin，padding</p></div><div>CSS引入的方式有哪些? link和@import的区别是?<p>&nbsp;&nbsp;&nbsp;
+					内联 内嵌 外链 导入
+					区别 ：同时加载
+					前者无兼容性，后者CSS2.1以下浏览器不支持
+					Link 支持使用javascript改变样式，后者不可</p></div>
+					<div>写出几种IE6 BUG的解决方法<p>
+					1.双边距BUG float引起的 使用display <br>	
+					2.3像素问题 使用float引起的 使用dislpay:inline -3px<br>
+					3.超链接hover 点击后失效 使用正确的书写顺序 link <br>visited hover active<br>
+					4.Ie z-index问题 给父级添加position:relative<br>
+					5.Png 透明 使用js代码 改<br>
+					6.Min-height 最小高度 ！Important 解决’<br>
+					7.select 在ie6下遮盖 使用iframe嵌套<br>
+					8.为什么没有办法定义1px左右的宽度容器（IE6默认的行高造成的，使用over:hidden,zoom:0.08 line-height:1px）</p>
+					</div>
+
+					
+				</div>
+				<div class="main col-md-4 col-lg-4">
+					<div>document load 和document ready的区别<p>
+					Document.onload 是在结构和样式加载完才执行js<br>
+					Document.ready原生种没有这个方法，jquery中有 $().ready(function)</p></div>
+					<div>清除浮动的几种方式，各自的优缺点<p>
+					1.使用空标签清除浮动 clear:both（理论上能清楚任何标签，，，增加无意义的标签）<br>
+					2.使用overflow:auto（空标签元素清除浮动而不得不增加无意代码的弊端,,使用zoom:1用于兼容IE）<br>
+					3.是用afert伪元素清除浮动(用于非IE浏览器)</p></div>
+					<div>CSS选择符有哪些?哪些属性可以继承?优先级算法如何计算?内联和important哪个优先级高?<p>
+					标签选择符 类选择符 id选择符<br>
+					继承不如指定 Id>class>标签选择<br>
+					后者优先级高</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<!-- article (css实现 见css/zy.css) -->
+	<article id="article">
+		<ul > 
+
+			<li><a href="#aaa">笔记</a></li>
+			<hr>
+			
+			<li><a href="#bbb">案例</a></li>
+			<hr>
+			
+			<li><a href="#ccc">游戏</a></li>
+			<hr>
+			<li><a href="#ddd">试题</a></li>
+			<hr>
+			<li style="display: block;"><a href="">置顶</a></li>
+		</ul>
+	</article>
+	<!-- footer -->
+	<footer>
+		<p>版权归“想出头的咸鱼小组”所有，侵者必究</p>
+		<p>我们的故事，未完待续……</p>
+	</footer>
+	<script>
+
+	</script>
+	<script>
+	// 大图切换	
+		function $(id){
+			return document.getElementById(id) ;
+		};
+		var oDiv=$('pic');
+		var oBtnl=$('btnl');
+		var oBtnr=$('btnr');
+		var logo=document.getElementsByTagName('img')[0];
+		var h3=document.getElementsByTagName('h3')[0];
+		var h5=document.getElementsByTagName('h5')[0];
+		var arrimg=['url(img/s31_bg.jpg)','url(img/s41_bg.jpg)','url(img/s51_bg.jpg)','url(img/s61_bg.jpg)','url(img/s71_bg.jpg)'];
+		var ah3=['想 出 头 的 咸 鱼 小 组','Xiang Chu Tou De Xian Yu Xiao Zu','xiang chu tou de xian yu xiao zu','Xiang Chu Tou De Xian Yu Xiao Zu','xiang chu tou de xian yu xiao zu'];
+		var ah5=['一 个 很 牛 b 的 小 组','Yi Ge Hen Niu B De Xiao Zu','Yi Ge Hen Niu B De Xiao Zu','Yi Ge Hen Niu B De Xiao Zu','Yi Ge Hen Niu B De Xiao Zu'];
+		var num=0;
+		oBtnr.onclick=function(){
+			num++;
+			if(num==arrimg.length){num=0;}
+			oDiv.style.backgroundImage=arrimg[num];
+			h3.innerHTML=ah3[num];
+			h5.innerHTML=ah5[num];
+		};
+		oBtnl.onclick=function(){
+			num--;
+			if(num == -1){num=arrimg.length-1;}
+			oDiv.style.backgroundImage=arrimg[num];
+			h3.innerHTML=ah3[num];
+			h5.innerHTML=ah5[num];
+		};
+	</script>
+	<script>
+	//置顶
+		var oArticle=document.getElementById('article');
+		var qLi=oArticle.getElementsByTagName('li');
+
+		qLi[3].onclick=function(){
+			// window.scrollTo('0','0');
+			// document.body.animation({scrollTop:0}, 500);
+			oArticle.style.display='none';
+		}
+	</script>
+	   <!-- jQuery -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <!-- 自定义js -->
+    <!-- <script src="js/jquery-1.10.2.min.js"></script> -->
+    <script src="js/jquery-1.11.1.js"></script>
+	<script src="js/zyxxk.js"></script>
+    <script src='js/main.js'></script>
+</body>
+</html>

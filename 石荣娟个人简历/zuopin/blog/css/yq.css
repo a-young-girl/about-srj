@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+p{ color:#666; font-size:12px;}
+#article{ width:1020px; height:660px; margin:20px auto;  background:url(images/aboutphoto.jpg) no-repeat bottom right;}
+.nav{ border-bottom:#F0F0F0 1px solid; font-size:12px; font-weight:normal; line-height:40px; height:40px;}
+.nav a{ width:100px; text-align:center; display:block; float:left; text-decoration:none; color:#FFF;}
+.nav .n1{ background: #090;}
+.nav .n2{background: #090; opacity:0.6;}
+.nav span{ float:right; font-size:12px; color: #999;}
+.left{ width:760px; height:620px; background: url(images/r_line.jpg) repeat-y right; line-height:22px; float:left;}
+.left h2{ color:#666;font-family:"宋体";}
+.left p{ color:#666; font-size:12px;font-family:"宋体"; margin-bottom:20px; line-height:20px; margin-right:20px;}
+.left a{ text-decoration:none; color: #096; margin-left:40px;}
+.right{ width:250px; height:620px;  margin-top:40px;float:right;}
+.right p{ color: #999; font-family:宋体; font-size:12px; margin-left:10px;  }
+.right span{ color:#093;}

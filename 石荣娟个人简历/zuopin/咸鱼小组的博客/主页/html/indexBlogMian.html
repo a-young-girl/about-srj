@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>博客首页</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="" href="../css/indexblog.css">
+    
+    <script src="../jquery-2.1.4/dist/jquery.js"></script>
+    <script src="../js/mianblog.js"></script>
+    <style>body{overflow-X: hidden;}</style>
+</head>
+
+<body>
+           <div id="mask"><span id="span"></span><div id="firstlogo"><img src="../images/logo.png" alt=""></div><div id="cicle"></div></div>       
+    
+        <canvas id="canvas" width="215px" height="2220px"></canvas>
+        <canvas id="canvas2" width="215px" height="2220px"></canvas>
+        <div id="mianBody">
+            <div class="mianbignav">
+                <ul>
+                    <li><a href=""><img src="../images/logo.png" alt=""></a></li>
+                    <li><a href="">博客主页</a>
+                    </li>
+                    <li id="friendsnavbig"><a href="../../小组博客/about.html">咸鱼们</a>
+                        <ul id="friendsnav">
+                            <li>
+                                <div><img src="../images/qq.jpg" alt="">
+                                    <p>邱谦</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div><img src="../images/zy.jpg" alt="">
+                                    <p>朱勇</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div><img src="../images/lh.jpg" alt="">
+                                    <p>李浩</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div><img src="../images/ll.jpg" alt="">
+                                    <p>刘蕾</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div><img src="../images/srj.jpg" alt="">
+                                    <p>石荣娟</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div><img src="../images/hjf.jpg" alt="">
+                                    <p>黄坚峰</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div><img src="../images/stt.jpg" alt="">
+                                    <p>沈涛涛</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div><img src="../images/wzy.jpg" alt="">
+                                    <p>邬兆杨</p>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li id="homework"><a href="../../zy/zy_about.html">作品展示</a>
+                        <ul id="jquerynav">
+                            <li>只能拼图</li>
+                            <li>贪吃蛇</li>
+                            <li>五子棋</li>
+                            <li>行星自转</li>
+                            <li>黑客帝国</li>
+                        </ul>
+                    </li>
+                    <li><a href="../../登录注册/about.html">注册/登录 </a></li>
+
+                </ul>
+                <div id="login-icon">
+                    <img src="" alt="" id="login-icon-img">
+                    <span id="login-span"></span>
+                </div>
+            </div>
+            <div id="mianbanner">
+                <ul id="banner-ul">
+                    <li><img src="../images/banner1.jpg" alt=""></li>
+                    <li><img src="../images/banner2.jpg" alt=""></li>
+                    <li><img src="../images/banner3.jpg" alt=""></li>
+                    <li><img src="../images/banner4.jpg" alt=""></li>
+
+                </ul>
+                <span id="banner-left" class="span">《</span>
+                <span id="banner-right" class="span">》</span>
+                <div id="banner-list">
+                    <div class="list-item"></div>
+                    <div class="list-item"></div>
+                    <div class="list-item"></div>
+                    <div class="list-item"></div>
+                </div>
+                    x
+                <div class="advei">
+                    <span class="close">X</span>
+                    <p>欢迎光临咸鱼小组的博客！现在是北京时间</p>
+                    <span id="adveispan">
+                        <span class="adveispanson"></span>
+                        <span class="adveispanson"></span>：
+                        <span class="adveispanson"></span>
+                        <span class="adveispanson"></span>：
+                        <span class="adveispanson"></span>
+                        <span class="adveispanson"></span>
+                    </span>
+                </div>
+            </div>
+            <div class="right-bar">
+                <div class="sideimage">
+                    <ul>
+                        <li><img src="../images/banner1.jpg" alt=""></li>
+                        <li><img src="../images/banner2.jpg" alt=""></li>
+                        <li><img src="../images/banner3.jpg" alt=""></li>
+                        <li><img src="../images/banner4.jpg" alt=""></li>
+                    </ul>
+                    <div id="sideblock"></div>
+                </div>
+                <h2 id="h2" class="h2">SOCIAL CONNECTS</h2>
+                <div class="sidelink">
+                    <a href=""><i class="fa fa-facebook fa-2x"></i></a>
+                    <a href=""><i class="fa fa-chrome fa-2x"></i></a>
+                    <a href=""><i class="fa fa-github-square fa-2x"></i></a>
+                    <a href=""><i class="fa fa-wechat fa-2x"></i></a>
+                    <a href=""><i  class="fa fa-qq fa-2x"></i></a>
+                </div>
+                <div id="sidesup">
+                 <input id="input" type="text" name="" value=""> <button type="button" id="subscribe"><b>订阅</b></button>
+                 <div id="supmask">ENTER YOUR EMAIL</div>
+                </div>
+                    <h2 id="h22" class="h2">给我们打赏吧😙</h2>
+                    <div class="donation">
+                        <p id="donation-p">如果您喜欢我们的博客的话，欢迎给我们打赏哦！如果您不喜欢或者不想打赏也没关系哦，谢谢❤ ️！</p>
+                        <button id="donation-button">DONATION</button>
+                        <div id="donationsystem">
+                            <div class="dona-count">
+                            <div class="dona-nums">10 <i class="fa fa-cny "></i></div>
+                            <div class="dona-nums">20 <i class="fa fa-cny "></i></div>
+                            <div class="dona-nums">30 <i class="fa fa-cny "></i></div>
+                            <div class="dona-nums">50 <i class="fa fa-cny "></i></div>
+                            <div class="dona-nums">100 <i class="fa fa-cny "></i></div>
+                            </div>
+                      
+                        </div>
+                    </div>
+                    <h2 id="h23" class="h2">热门博文</h2>
+                    <div class="decalemian">
+                    
+                    </div>
+                    <h2 id="h24" class="h2">tag</h2>
+                    <div id="cloudtag">
+                   
+                        
+                    </div>
+                    <div class="addcloudtag">
+                        <input type="text" id="addcloudtaginput"><button id="addcloudtagbtn">添加</button>
+                    </div>
+            </div>
+                <div id="leftbar">
+                    <div id="left-info">
+                        <span id="left-info-span1">01001010101</span>
+                        <span id="left-info-span2">10010100</span>
+                        <div id="left-close">
+                            X
+                        </div>
+                    </div>
+                 
+                    <div id="left-header"><span id="left-span">热门博站</span></div>
+                    <div id="slidebody">
+                        <div id="slidebodyleft"></div>
+                        <div id="slidebodyright">
+                            <iframe src="piano.html" width="700px" height="1407px"></iframe>
+                        </div>
+                       
+                    </div>
+                    <div id="scollbar">
+                    <div id="scollitem"></div>
+                    </div>
+                </div>
+                <div id="footer">
+                    <p id="footerp1">持续更新中...</p>
+                    <p id="footerp2">版权归“想出头的咸鱼小组”所有，侵者必究</p>
+                    <div id="thanks">
+                        <div id="lastlogo"><img src="../images/logo.png" alt=""></div>
+                        <ul>
+                            <li><img src="../images/qq.jpg" alt=""></li>
+                            <li><img src="../images/lh.jpg" alt=""></li>
+                            <li><img src="../images/srj.jpg" alt=""></li>
+                            <li><img src="../images/hjf.jpg" alt=""></li>
+                            <li><img src="../images/ll.jpg" alt=""></li>
+                            <li><img src="../images/stt.jpg" alt=""></li>
+                            <li><img src="../images/zy.jpg" alt=""></li>
+                            <li><img src="../images/wzy.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+</body>
+    
+
+</html>

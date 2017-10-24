@@ -1,0 +1,209 @@
+img {
+  width: 100%;
+}
+@keyframes move {
+  100% {
+    right: 110%;
+  }
+}
+@keyframes rmove {
+  0% {
+    transform: translateX(-400px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes lmove {
+  0% {
+    transform: translateX(400px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes bigger {
+  0% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.left {
+  float: left;
+}
+.mid {
+  margin: 0 auto;
+}
+#one {
+  width: 100%;
+  height: 400px;
+}
+#one .cloud {
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+#one .cloud ul {
+  width: 100%;
+  height: 73px;
+  position: relative;
+}
+#one .cloud ul li {
+  width: 8%;
+  position: absolute;
+  top: 0;
+  right: -10%;
+  animation: move 30s infinite linear;
+}
+#one .cloud ul li:nth-child(2) {
+  animation: move 30s infinite 10s linear;
+}
+#one .cloud ul li:nth-child(3) {
+  animation: move 30s infinite 20s linear;
+}
+#one .contain {
+  width: 900px;
+  height: 400px;
+  margin: 200px auto 0;
+}
+#one .contain a {
+  display: block;
+  width: 50%;
+  height: 200px;
+  animation: bigger 1s ease-in;
+  transition: 1s;
+  margin: 0 auto;
+}
+#one .contain a:hover {
+  transform: scale(1.3);
+}
+#one .contain div {
+  width: 100%;
+  height: 50px;
+}
+#one .contain div > p {
+  transition: 0.6s;
+  width: 40%;
+  height: 50px;
+  color: #fff;
+  font: 40px/50px '微软雅黑';
+  float: left;
+  letter-spacing: 50px;
+}
+#one .contain div p:first-child {
+  margin-left: 115px;
+  text-align: right;
+  animation: rmove 2s  linear;
+}
+#one .contain div p:last-child {
+  animation: lmove 2s  linear;
+}
+#one .contain p {
+  transition: 0.6s;
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  font: 18px/50px '微软雅黑';
+  letter-spacing: 15px;
+  text-align: center;
+  margin-top: 50px;
+  animation: bigger 2s ease-in;
+}
+nav:first-child {
+  z-index: 9999;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+nav:first-child a {
+  display: block;
+  width: 70px;
+  height: 33px;
+  text-align: center;
+  font: 20px/33px 'Arial';
+  color: #fff;
+  background: rgba(255, 255, 255, 0.4);
+  text-decoration: none;
+  border-radius: 10px;
+}
+section:nth-of-type(2) {
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+section:nth-of-type(2) .container {
+  width: 600px;
+  height: 600px;
+  margin: 50px auto 0;
+}
+section:nth-of-type(2) .container a {
+  text-decoration: none;
+  color: #ddd;
+  position: relative;
+  transition: 1s;
+}
+section:nth-of-type(2) .container a:before {
+  content: "";
+  display: none;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+section:nth-of-type(2) .container a:hover::before {
+  display: block;
+}
+section:nth-of-type(2) .container .intro {
+  display: block;
+  width: 150px;
+  height: 150px;
+  border: 5px #fff solid;
+  border-radius: 50%;
+  font: 30px/150px 'Arial';
+  text-align: center;
+}
+section:nth-of-type(2) .container .intro:hover {
+  transform: rotate(360deg);
+}
+section:nth-of-type(2) .container .intro1 {
+  display: block;
+  width: 130px;
+  height: 130px;
+  border: 5px #fff solid;
+  font: 30px/130px 'Arial';
+  text-align: center;
+  margin: 10px 0;
+}
+section:nth-of-type(2) .container .intro1:hover {
+  transform: scale(1.1);
+}
+section:nth-of-type(2) .container > div:nth-child(2) {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+}
+section:nth-of-type(2) .container > div:nth-child(2) a:nth-child(2):before {
+  content: "";
+  display: none;
+  width: 130px;
+  height: 130px;
+  border-radius: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+section:nth-of-type(2) .container > a:first-child {
+  margin-bottom: 25px;
+}
+section:nth-of-type(2) .container > a:last-child {
+  margin-top: 25px;
+}

@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+#logo{ margin-left:200px; margin-top:10px;}
+ nav{ float:right; margin-top:20px; margin-right:150px;}
+ nav a{ position:relative; display:inline-block; font-size:18px; font-family:"微软雅黑";}
+ nav a:hover{ text-decoration:none;}
+ .top-nav a{ margin:0 5px; padding:0 1px;}
+ .top-nav a span{ font-family:微软加黑; font-size:20px; color: #F0F; display:block; float:left;}
+ .top-nav a .en{color:#999; font-size:12px;  display: none;}
+ .top-nav a .en:hover{ display:block;}
+#article{ width:1020px; height:6900px; margin:20px auto; }
+.nav{ border-bottom:#F0F0F0 1px solid; font-size:12px; font-weight:normal; line-height:40px; height:40px;}
+.nav a{ width:100px; text-align:center; display:block; float:left; text-decoration:none; color:#FFF;}
+.nav .n1{ background: #090;}
+.nav .n2{background: #090; opacity:0.6;}
+.nav .t-nav span{ font-size:12px; float:right; color:#999; }
+
+.left{ width:760px; height:6880px; background: url(images/r_line.jpg) repeat-y right; float:left;}
+.left .art1{ width:760px; height:250px; border-bottom:1px #CCC dotted;}
+ .left .art1 h4{ margin:20px 0 10px 0; color: #333; }
+ .left .art1 a{ text-decoration:none; color:#333; margin-left:5px;}
+ .left .art1 .dateview{ width:695px;height:25px; color:#666; overflow:hidden; clear:both; margin:10px 0 0 0; display:inline-block;line-height:25px;}
+ .left .art1 .dateview span{ margin:0 auto; margin-right:20px;}
+ .left .art1 .dateview span a{ color: #090;}
+ .left .art1 img{ float:left; width:180px; height:120px; padding:4px; border: #F4F2F2 1px solid;}
+ .left .art1 ul{ float:right; width:510px; margin:10px 20px 0 0; line-height:20px; }
+ .left .art1 p{ font-size:11px; color:#666;}
+ .left .art1 .readmore{ background: #F60; color:#FFF; padding:5px 10px; float:right; margin:20px 0 0 0;}
+ 
+ .right{ width:250px; height:6880px; float:right;}
+ .right .rnav{ width:250px; opacity:0; z-index:1; overflow:hidden;}
+ .right .rnavs{ width:250px; position:fixed; z-index:0; overflow:hidden;}
+ .right .rnav li{ width:100px; text-align:center; display:block; margin-bottom:5px; margin-right:5px;  height:40px; line-height:40px;float:left;}
+ .right .rnavs li{ width:100px; text-align:center; display:block; margin-bottom:5px; margin-right:5px;  height:40px; line-height:40px;float:left;}
+ .right .rnav li a,.rnavs li a{ color:#333; display:block; transition:all 1s; border:1px #CCCCCC solid; text-decoration:none; font-size:12px; background:#F69;}
+ .right rnav ul li a:hover,.rnavs ul li a:hover{ background: #F9F; transform:rotate(360deg); opacity:0.8;}
+ .right .news h4{ font-size:14px; background:url(images/r_title_bg.jpg) repeat-x center;}
+ .right .news h4 p{ background: #FFF; color:#666; width:70px;}
+ .right .news h4 .s1{ color: #0C0;}
+ .right .news h4 .s2{ color: #0CC;}
+ .right .news ul{ margin-bottom:20px;}
+ .right .news ul li{ font-size:11px; color:#666;}
+ .right .news ul li a{ text-decoration:none;}
+ .right .news ul li a:hover{ text-decoration:underline;}
+ .right .lm li{ height:25px; line-height:25px; clear:both; overflow:hidden; padding-left:10px; background:url(images/li.jpg) no-repeat left center;}
+ .right .lm{ margin:10px 0;}
+ .right .lm li a{ color: #333;}
+ .right .ph{ background:url(images/ph.jpg) no-repeat left 8px; margin:10px 0;}
+ .right .ph li{ line-height:30px; height:30px; border-bottom: 1px #CCC dotted;overflow:hidden;}
+ .right .ph li a{ color: #333;}
+ .right .share a{ margin-top::20px;}
+#footer{ width:1349px; height:35px;}
+#footer p{ color: #666; font-size:12px; margin-top:15px; margin-bottom:15px;  text-align:center; }
+#footer a{ text-decoration:none;}
+#footer span{ color: #333; margin-left:5px;}
+

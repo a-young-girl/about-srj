@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>咸鱼登录</title>
+	<link rel="stylesheet" type="text/css" href="css/about.css">
+	<link rel="stylesheet" type="text/css" href="./font/iconfont.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+
+
+	
+<div class="about-bg"></div>
+<div id="all">
+	<div class="container">
+	<div class="about-logo">
+			<a href="../主页/html/indexBlogMian.html"><img src="fish.png">
+			<h3>想出头的咸鱼小组</h3></a>
+	</div>
+			<!-- 头像 -->
+		<div class="about-me">
+				<div class="title-a">
+					<div class="normal-title">
+						<a class="active" id="js-sign-up-btn1" href="about.html">登录</a>
+						<b>·</b>
+						<a id="js-sign-up-btn2" class="" href="zhuce.html">注册</a>
+					</div>
+				</div>
+				<!-- 登录 -->
+				<div id="denglu">
+					<!-- 正常登录登录名输入框 -->
+					<div class="input-prepend restyle js-normal">
+						<input placeholder="手机号" type="text" name="session[email_or_mobile_number]" id="session_email_or_mobile_number" maxlength="11" />
+						<i class="iconfont icon-user"></i>
+					</div>
+					<div class="aaa sign-in-button-TS1" id="sign-in-button-TS1" style="display: none;">请输入手机号</div>
+
+					<div class="input-prepend">
+						<input placeholder="密码" type="password" name="session[password]" id="session_password" />
+						<i class="iconfont icon-ic_password"></i>
+					</div>
+					<div class="aaa sign-in-button-TS2" style="display: none;" id="sign-in-button-TS2" >请输入密码</div>
+
+
+
+					<!-- 记住我 -->
+					<div class="remember-btn">
+						<input type="checkbox" value="true" checked="checked" name="session[remember_me]" id="session_remember_me" /><span>记住我</span>
+					</div>
+					<!-- 忘记密码 -->
+					<div class="forget-btn">
+						<a id="forget-btn-a" data-toggle="dropdown" href="">登录遇到问题?</a>
+						<ul class="dropdown-menu" id="dropdown-menu" style="display: none;">
+							<li><a target="_blank" href="">用手机号重置密码</a></li>
+							<li><a target="_blank" href="">用邮箱重置密码</a></li>
+							<li><a target="_blank" href="">无法用海外手机号登录</a></li>
+							<li><a target="_blank" href="">无法用 Google 帐号登录</a></li>
+						</ul>
+					</div>
+					<input type="submit" name="commit" value="登录" class="sign-in-button" onclick="check()" />
+
+					<!-- 更多登录方式 -->
+					<div class="more-sign">
+						<h6>社交帐号登录</h6>
+						<ul>
+							<li><a class="weibo" target="_blank" href="http://weibo.com/"><i class="iconfont icon-weibo"></i></a></li>
+							<li><a class="weixin" target="_blank" href="https://wx.qq.com/"><i class="iconfont icon-weixin"></i></a></li>
+							<li><a class="qq" target="_blank" href="http://w.qq.com/"><i class="iconfont icon-qq1"></i></a></li>
+
+							<li class="js-hide-method hide"><a class="douban" target="_blank" href="https://www.douban.com/"><i class="iconfont icon-douban"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- 注册 -->
+				<div id="zhuce">
+					
+				</div>
+		</div>
+	</div>
+</div>
+
+<div></div>
+<script src="js/about.js"></script>
+</body>
+</html>

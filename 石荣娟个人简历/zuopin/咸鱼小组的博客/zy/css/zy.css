@@ -1,0 +1,387 @@
+/* reset */
+	body, ul, p, hr {
+		margin  : 0;
+		padding : 0;
+	}
+
+	ul {
+		list-style : none;
+	}
+/* reset* */
+
+/* guang gao */
+	.right {
+		width    : 100px;
+		height   : 100px;
+		top      : 50px;
+		right    : 0px;
+		position : absolute;
+		z-index  : 3;
+	}
+
+	.right img {
+		width  : 100px;
+		height : 100px;
+	}
+
+	.right p {
+		font-size  : 13px;
+		background : #fff;
+	}
+
+	.dd_close {
+		width            : 35px;
+		height           : 18px;
+		text-align       : center;
+		border           : solid 1px #999;
+		background-color : #E0E0E0;
+		top              : 0px;
+		right            : 0px;
+		position         : absolute;
+	}
+/* guang gao* */
+
+/* header */
+	header {
+		width      : 100%;
+		height     : 50px;
+		position   : fixed;
+		top        : 0;
+		left       : 0;
+		font       : 20px '微软雅黑';
+		background : #67829d;
+		z-index    : 9999;
+	}
+
+	header .topbar {
+		height        : 50px;
+		border-bottom : 1px solid #e0e0e0;
+		line-height   : 45px;
+	}
+
+	header .topbar a {
+		color : #fff;
+	}
+
+	header .topbar .row div:first-child a {
+		display  : block;
+		position : relative;
+	}
+
+	header .topbar .row div:first-child a:hover {
+		text-decoration : none;
+	}
+
+	header .topbar .row > div + div {
+		border-left : 1px solid #e0e0e0;
+	}
+/* header* */
+
+/* section */
+
+	section {
+		width          : 100%;
+		margin         : 50px 0 0;
+		padding-bottom : 30px;
+		background     : #ddd;
+	}
+
+	section > div {
+		width  : 100%;
+		height : auto;
+	}
+
+	section > div h3 {
+		text-align : center;
+	}
+
+	section #pic {
+		height : 600px;
+	}
+
+	section #pic > div > h3 {
+		margin-top : 50px;
+		transition : all 2s;
+	}
+
+	section #pic > div > h5 {
+		margin-top : 50px;
+		transition : all 2s;
+	}
+
+	section #pic > div:hover h3 {
+		word-spacing : 80px
+	}
+
+	section #pic > div:hover h5 {
+		word-spacing : 30px
+	}
+
+	section > div:first-child {
+		text-align       : center;
+		background-image : url(../img/s31_bg.jpg);
+		background-size  : 100% 100%;
+	}
+
+	section div:first-child#pic a {
+		width           : 30px;
+		height          : 80px;
+		display         : block;
+		background      : rgba(255, 255, 255, .4);
+		color           : #333;
+		font-size       : 40px;
+		text-align      : center;
+		line-height     : 80px;
+		text-decoration : none;
+		position        : absolute;
+		top             : 240px;
+	}
+
+	section div:first-child#pic a#btnl {
+		left : 0px;
+	}
+
+	section div:first-child#pic a#btnr {
+		right : 0px;
+	}
+
+	section > div:first-child h5,
+	section > div:first-child h3 {
+		color : #fff;
+	}
+
+	section > div:first-child div {
+		width       : 100%;
+		height      : 100%;
+		padding-top : 80px;
+		background  : rgba(0, 0, 0, .4);
+	}
+
+	section > div:nth-child(2) {
+		height : auto;
+	}
+
+	section > div:nth-child(2) div {
+		width  : 78%;
+		height : auto;
+		float  : left;
+	}
+
+	section > div:nth-child(2) div h3 {
+		margin-bottom : 0;
+	}
+
+	section > div:nth-child(2) div ul#html {
+		width  : 100%;
+		height : 50px;
+	/ / display: none;
+
+	}
+
+	section > div:nth-child(2) div ul#html li {
+		width         : 15%;
+		height        : 30px;
+		line-height   : 30px;
+		margin        : 10px 2.5%;
+		float         : left;
+		text-align    : center;
+		background    : #E7CF96;
+		border-radius : 5px;
+		cursor        : pointer;
+	}
+
+	section > div:nth-child(2) div ul#html li:hover,
+	section > div:nth-child(2) div ul#html li.active {
+		color      : #fff;
+		background : #362c2b;
+	}
+
+	section > div:nth-child(2) div ul#aaaul {
+		display         : flex;
+		flex-wrap       : wrap;
+		justify-content : space-around;
+	}
+
+	section > div:nth-child(2) div ul#aaaul > li {
+		width           : 100%;
+		height          : auto;
+		overflow        : hidden;
+		font-size       : 16px;
+		float           : left;
+		padding         : 20px;
+		border          : 1px solid #67829d;
+		background      : url(../img/s2111_bg.jpg) no-repeat;
+		background-size : 100% 100%;
+		word-break      : break-all;
+		margin          : 10px 0;
+	}
+
+	section > div:nth-child(2) div ul#aaaul > li:hover {
+		box-shadow : 0px 2px 2px 2px;
+	}
+
+	section > div:nth-child(2) div ul#aaaul > li > p {
+		font          : 20px '微软雅黑';
+		margin-bottom : 10px;
+		text-align    : center;
+	}
+
+	section > div:nth-child(2) div span {
+		border      : 1px solid #ccc;
+		font-size   : 24px;
+		display     : inline-block;
+		width       : 50px;
+		height      : 50px;
+		line-height : 50px;
+		text-align  : center;
+		float       : right;
+		margin-left : 5px;
+		cursor      : pointer;
+	}
+
+	section > div:nth-child(2) div span:hover {
+		background : #362c2b;
+		color      : #E7CF96;
+	}
+
+	section > div:nth-child(2) div#bbb {
+		width      : 20%;
+		height     : auto;
+		float      : right;
+		border     : 1px solid #555;
+		padding    : 5px;
+		margin-top : 3px;
+	}
+
+	section > div:nth-child(2) div#bbb h3 {
+		margin-top : 10px;
+	}
+
+	section > div:nth-child(2) div#bbb #div2 {
+		width  : 100%;
+		height : 100%;
+	}
+
+	section > div:nth-child(2) div#bbb #div2 > div {
+		display : none;
+		width   : 100%;
+	}
+
+	section > div:nth-child(2) div#bbb #div2 > div a {
+		color : black;
+		width : 100%;
+	}
+
+	section > div:nth-child(2) div#bbb #div2 > div a p {
+		padding-top : 10px
+	}
+
+	section > div:nth-child(2) div#bbb #div2 .active {
+		background : #ccc;
+	}
+
+	section > div#ccc > div {
+		width  : 100%;
+		height : auto;
+	}
+
+	section > div#ccc > div .biankuang {
+		width         : 362px;
+		height        : 203px;
+		border        : 1px solid #555;
+		float         : left;
+		margin-bottom : 10px;
+	}
+
+	section > div#ccc > div .biankuang > div {
+		width    : 200px;
+		height   : 200px;
+		overflow : hidden;
+		float    : left;
+	}
+
+	section > div#ccc > div .biankuang > div:hover img {
+		transform : scale(1.2);
+		
+	}
+
+	section > div#ccc > div .biankuang > div img {
+		width      : 200px;
+		height     : 200px;
+		transition : all 1s ease-in;
+	}
+
+	section > div#ccc > div .biankuang p > span {
+		color : #aaa;
+	}
+
+	section > div#ddd > .row div {
+		word-break  : break-all;
+		font-weight : bold;
+		padding     : 10px;
+		font-size   : 18px;
+	}
+
+	section > div#ddd > .row div p {
+		display     : none;
+		font-weight : normal;
+		font-size   : 15px
+	}
+/* section* */
+
+/* article */
+
+	article {
+		width         : 50px;
+		height        : 210px;
+		position      : fixed;
+		right         : 0px;
+		bottom        : 100px;
+		background    : #67829d;
+		border-radius : 10px;
+		display       : none;
+	}
+
+	article > ul {
+		width          : 100%;
+		height         : 100%;
+		display        : flex;
+		flex-direction : column;
+		align-content  : space-around;
+	}
+
+	article > ul > hr {
+		width   : 80%;
+		padding : 0 10px;
+	}
+
+	article > ul > li {
+		
+		width      : 100%;
+		height     : 40px;
+		text-align : center;
+		
+	}
+
+	article > ul > li > a {
+		width       : 100%;
+		height      : 100%;
+		line-height : 40px;
+		color       : #fff;
+		
+	}
+/* article* */
+
+/* footer */
+	footer {
+		border-top  : 1px #ccc solid;
+		width       : 100%;
+		height      : 100px;
+		text-align  : center;
+		line-height : 40px;
+		color       : #333;
+		font-size   : 15px;
+		font-family : '微软雅黑';
+		background  : #67829d;
+	}
+/* footer* */

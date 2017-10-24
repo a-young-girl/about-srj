@@ -1,0 +1,124 @@
+#zuopin{
+    width: 90%;
+    height: 600px;
+    margin:0 auto;
+    color:#fff;
+}
+
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    box-sizing:border-box;
+} 
+.showlist {
+    width: 65%;
+    height: 60%;
+    border-radius: 100%;
+    position: relative;
+    margin: 20px auto;
+}
+
+ul.showlist{
+    list-style-type: none;
+    padding: 0;
+    display: block;
+}
+
+ul.showlist li{
+    display: block;
+}
+.box {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 100%;
+    text-align: center;
+    transition: all 0.4s;
+    z-index: 99999;
+    width: 23%;
+    height: 23%;
+}
+
+.circleBox {
+    width: 30%;
+    position: absolute;
+    top:35%;
+    right: 12%;
+    left: 10%;
+    color:#fff;
+    font-size:22px;
+    transform:rotate(15deg);
+    text-align: left;
+    transform: translateY(-50%);
+    display: none;
+
+}
+
+ul.showlist li:first-child .circleBox {
+    display: block;
+}
+ul.showlist li .circleBox{
+    width:80%;
+    height:80%;
+    text-align: left; 
+    color:#fff;
+    font-size:22px;
+    transform:rotate(15deg);
+}
+.circleSelect {
+    padding: 6px;
+    box-sizing: content-box;
+}
+.box span{
+    vertical-align: middle;
+    display: inline-block;
+}
+.container{
+    position:absolute;
+    top:20px;
+    left:-50px;
+    width: 800px;
+    height: 500px;
+    margin:0 auto;
+    padding: 50px;
+  transform:rotate(-15deg);
+  border-radius: 5px;
+  font-family: sans-serif;
+}
+.wStyle{
+    border: 3px dashed #f0f;
+}
+.fStyle{
+  background-color: #f0f;
+  color: #fff;
+  font-size:18px;
+  font-weight: 600;
+  transform:rotate(15deg);
+
+}
+.main{
+    width:460px;
+    height:520px;
+    position:absolute;
+    right:200px;
+    top:30px;
+    border:2px #f0f solid;
+    border-radius:10px;
+    font-family:"仿宋";
+}
+.main h1{
+    font-size:24px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.main p{
+    font-size:18px;
+    margin-left:50px;
+    
+}

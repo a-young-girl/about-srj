@@ -1,0 +1,323 @@
+*,*:before,*:after{
+	box-sizing: border-box;
+}
+#zwjs{
+	position:relative;
+	margin-top: 50px;
+	margin-left: 50px;
+	width:1000px;
+	height:360px;
+	
+}
+#zwjs .zwjs-left{
+	width: 250px;
+	height: 250px;
+	position: absolute;
+	top: 50px;
+	left: 100px;
+	
+}
+#zwjs .zwjs-left .rotate{
+	border-radius: 50%;
+	position:absolute;
+	top:0;
+	right:0;
+	bottom: 0;
+	left:0;
+	margin: auto;
+	animation-fill-mode:forwards;
+}
+#zwjs .zwjs-left .rotate:before,
+#zwjs .zwjs-left .rotate:after{
+    content: '';
+    position:absolute;
+    display: block;
+    height:inherit;
+    width:inherit;
+    border-radius:inherit;
+}
+.dot {
+  width: 200px;
+  height: 200px;
+  box-shadow: -106px 0 0 -98px #14c8ff, 
+              -106px 0 4px -97px #0014f0, 
+               106px 0 0 -98px #14c8ff, 
+               106px 0 4px -97px #0014f0, 
+               0 -106px 0 -98px #14c8ff, 
+               0 -106px 4px -97px #0014f0, 
+               0 106px 0 -98px #14c8ff, 
+               0 106px 4px -97px #0014f0, 
+               0 0 4px 4px #111, 
+               0 0 4px 8px rgba(0, 30, 250, 0.2);
+   animation: spin 4s linear infinite;
+}
+.dot:before, .dot:after {
+  box-shadow: -106px 0 0 -98px #14c8ff, 
+              -106px 0 4px -97px #0014f0, 
+               106px 0 0 -98px #14c8ff, 
+               106px 0 4px -97px #0014f0, 
+               0 -106px 0 -98px #14c8ff, 
+               0 -106px 4px -97px #0014f0, 
+               0 106px 0 -98px #14c8ff, 
+               0 106px 4px -97px #0014f0;
+}
+.dot:before {
+          transform: rotate(8deg);
+}
+.dot:after {
+          transform: rotate(65deg);
+}
+.img{
+	width: 180px;
+    height: 180px;
+    border:2px #fff solid;
+	background:url(../img/wo.jpg) no-repeat 20px 0px;
+	background-size: 80%;
+	transition: all 0.4s;
+}
+.img:hover{
+   transform:rotate(360deg);
+}
+.dot2 {
+  width: 216px;
+  height: 216px;
+  box-shadow: -114px 0 0 -106px #14c8ff,
+              -114px 0 4px -105px #0014f0,
+               114px 0 0 -106px #14c8ff,
+               114px 0 4px -105px #0014f0,
+               0 -114px 0 -106px #14c8ff, 
+               0 -114px 4px -105px #0014f0,
+               0 114px 0 -106px #14c8ff,
+               0 114px 4px -105px #0014f0,
+               0 0 4px 4px #111,
+               0 0 4px 8px rgba(0, 30, 250, 0.2);  
+    animation: spin2 4s linear infinite;
+}
+.dot2:before, .dot2:after {
+  box-shadow: -114px 0 0 -106px #14c8ff, 
+              -114px 0 4px -105px #0014f0, 
+               114px 0 0 -106px #14c8ff, 
+               114px 0 4px -105px #0014f0, 
+               0 -114px 0 -106px #14c8ff, 
+               0 -114px 4px -105px #0014f0, 
+               0 114px 0 -106px #14c8ff, 
+               0 114px 4px -105px #0014f0;
+}
+.dot2:before { 
+          transform: rotate(73deg);
+}
+.dot2:after {
+          transform: rotate(122deg);
+}
+
+.dot3 {
+  width: 232px;
+  height: 232px;
+  box-shadow: -122px 0 0 -114px #14c8ff, 
+              -122px 0 4px -113px #0014f0, 
+               122px 0 0 -114px #14c8ff, 
+               122px 0 4px -113px #0014f0, 
+               0 -122px 0 -114px #14c8ff, 
+               0 -122px 4px -113px #0014f0, 
+               0 122px 0 -114px #14c8ff, 
+               0 122px 4px -113px #0014f0, 
+               0 0 4px 4px #111, 
+               0 0 4px 8px rgba(0, 30, 250, 0.2);
+          animation: spin 4s linear infinite;
+}
+.dot3:before, .dot3:after {
+  box-shadow: -122px 0 0 -114px #14c8ff, 
+              -122px 0 4px -113px #0014f0, 
+               122px 0 0 -114px #14c8ff, 
+               122px 0 4px -113px #0014f0, 
+               0 -122px 0 -114px #14c8ff, 
+               0 -122px 4px -113px #0014f0, 
+               0 122px 0 -114px #14c8ff, 
+               0 122px 4px -113px #0014f0;
+}
+.dot3:before {
+          transform: rotate(39deg);
+}
+.dot3:after {
+          transform: rotate(242deg);
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg) scale(0.7, 0.7);
+            transform: rotate(0deg) scale(0.7, 0.7);
+  }
+  50% {
+    -webkit-transform: rotate(180deg) scale(1, 1);
+            transform: rotate(180deg) scale(1, 1);
+  }
+  100% {
+    -webkit-transform: rotate(360deg) scale(0.7, 0.7);
+            transform: rotate(360deg) scale(0.7, 0.7);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg) scale(0.7, 0.7);
+            transform: rotate(0deg) scale(0.7, 0.7);
+  }
+  50% {
+    -webkit-transform: rotate(180deg) scale(1, 1);
+            transform: rotate(180deg) scale(1, 1);
+  }
+  100% {
+    -webkit-transform: rotate(360deg) scale(0.7, 0.7);
+            transform: rotate(360deg) scale(0.7, 0.7);
+  }
+}
+@-webkit-keyframes spin2 {
+  0% {
+    -webkit-transform: rotate(0deg) scale(0.7, 0.7);
+            transform: rotate(0deg) scale(0.7, 0.7);
+  }
+  50% {
+    -webkit-transform: rotate(-180deg) scale(1, 1);
+            transform: rotate(-180deg) scale(1, 1);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg) scale(0.7, 0.7);
+            transform: rotate(-360deg) scale(0.7, 0.7);
+  }
+}
+@keyframes spin2 {
+  0% {
+    -webkit-transform: rotate(0deg) scale(0.7, 0.7);
+            transform: rotate(0deg) scale(0.7, 0.7);
+  }
+  50% {
+    -webkit-transform: rotate(-180deg) scale(1, 1);
+            transform: rotate(-180deg) scale(1, 1);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg) scale(0.7, 0.7);
+            transform: rotate(-360deg) scale(0.7, 0.7);
+  }
+}
+
+#zwjs .zwjs-right{
+	width:600px;
+	height:300px;
+	position:absolute;
+	top:50px;
+	right:-50px;
+	
+}
+#zwjs .zwjs-right p{
+	color:#fff;
+	font-family: '仿宋';
+	font-size: 27px;
+	margin-bottom: 35px;
+  transition:all 0.5s;
+}
+#zwjs .zwjs-right p:nth-child(1){
+  color:#B6FF00;
+  font-size:35px;
+  animation:p 1.5s ease-in-out infinite alternate;
+}
+#zwjs .zwjs-right p:nth-child(2){
+  color:#B6FF00;
+  animation:p 1.5s ease-in-out infinite alternate;
+}
+#zwjs .zwjs-right p:nth-child(3){
+  color:#B6FF00;
+  animation:p 1.5s ease-in-out infinite alternate;
+}
+#zwjs .zwjs-right p:nth-child(4){
+  color:#B6FF00;
+  animation:p 1.5s ease-in-out infinite alternate;
+}
+@keyframes p {
+  from {
+    text-shadow: 0 0 0px #fff,
+               0 0 10px  #fff,
+               0 0 20px  #fff,
+               0 0 30px  #228DFF,
+               0 0 40px  #228DFF,
+               0 0 50px  #228DFF,
+               0 0 60px #228DFF,
+               0 0 100px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff,
+               0 0 10px #fff,
+               0 0 15px #fff,
+               0 0 20px #f0f,
+               0 0 35px #f0f,
+               0 0 40px #f0f,
+               0 0 50px #f0f,
+               0 0 75px #f0f;
+  }
+}
+//技能页面样式
+#power{
+  width:800px;
+  height:500px;
+}
+a{
+  text-decoration: none;
+  color:#fff;
+}
+#power h1{
+  color:#fff;
+  margin-top: -20px;
+  font-size:30px;
+  text-align:center;
+  font-family:'仿宋';
+}
+#power ul{
+  width:800px;
+  height:240px;
+  margin:0px auto;
+  padding-top: -300px;
+}
+#power ul li{
+  width:300px;
+  float: left;
+  height:80px;
+  margin-top: 20px;
+  margin-left: 90px;
+  line-height: 80px;
+}
+#power ul li a>div{
+  display:inline;
+  float: left;
+  width:80px;
+  height:80px;
+  border-radius:50%;
+  border:2px #fff solid;
+  text-align: center;
+  font-size:32px;
+  background:linear-gradient(blue,#fff);
+  transition:all 0.4s;
+}
+#power ul.list2 li{
+  margin-top: 15px;
+}
+#power ul.list2 li a>div{
+  width:70px;
+  height:70px;
+  background:radial-gradient(#fff,#f0f);
+  font-size:25px ;
+  line-height:70px;
+  color:blue;
+}
+#power ul.list2 li a:hover div{
+  transform:rotate(720deg) scale(0.8);
+}
+#power ul li a:hover div{
+  transform:rotate(720deg) scale(1.2);
+  opacity: 0.5;
+}
+#power ul li>p{
+  display:inline;
+  float: left;
+  color:#fff;
+  font-size: 20px;
+  margin-left: 40px;
+}

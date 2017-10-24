@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>五子棋</title>
+<link rel="icon" href="http://img.zcool.cn/community/018a9d55455c7e0000019ae91800bc.jpg" sizes="16x16">
+<style>
+table {
+    margin:auto;
+    margin-top:50px;
+}
+td {
+    width:25px;
+    height:25px;
+    border-radius: 25px;
+    text-align:center;
+    cursor: default;
+}
+input[type="text"]{
+visibility: visible;
+}
+</style>
+<script>
+function doc(id) {
+    return document.getElementById(id);
+}
+ 
+var xAll = 15;
+var yAll = 15;
+var redSuccess = 0;
+var blueSuccess = 0;
+onload = function () {
+    init();
+}
+ 
+function init() {
+    content = "";
+    s = false;
+    historys = new Array();
+    cancels = new Array();
+    var tables = doc("table1");
+    for (var y = 0; y < yAll; y++) {
+        content = content + "<tr>";
+        for (var x = 0; x < xAll; x++) {
+            content = content + "<td id='" + x + "," + y + "' onclick='clicktd(this)'>+</td>";
+        }
+        content = content + "</tr>";
+    }
+    tables.innerHTML = content;
+}
+ 
+function clicktd(t) {
+    if (t.style.backgroundColor == "") {
+        if (s) {
+            t.style.backgroundColor = "red";
+            historys.push(t.id);
+            s = false;
+        } else {
+            historys.push(t.id);
+            t.style.backgroundColor = "blue";
+            s = true;
+        }
+        if (win(t)) {
+            if (t.style.backgroundColor == "red")
+                doc("txt_Red").value = "Red:" + (++redSuccess);
+            else
+                doc("txt_Blue").value = "Blue:" + (++blueSuccess);
+            doc("btn_again").style.display = "initial";
+            var items = document.getElementsByTagName("td");
+            for (var i = 0; i < items.length; i++) {
+                items[i].onclick = "";
+            }
+            setTimeout(function () {
+                alert("赢了")
+            }, 50);
+        }
+    }
+}
+ 
+function undo() {
+    if (historys.length > 0) {
+        var itemId = historys.pop();
+        doc(itemId).style.backgroundColor = "";
+        s = s ? false : true;
+        cancels.push(itemId)
+    }
+}
+ 
+function unundo() {
+    if (cancels.length > 0) {
+        var itemId = cancels.pop();
+        clicktd(doc(itemId));
+    }
+}
+ 
+function win(t) {
+    var site = t.id;
+    var currentColor = t.style.backgroundColor;
+    var x = parseInt(site.split(',')[0]);
+    var y = parseInt(site.split(',')[1]);
+    for (var i = -4; i < 5; i++) {
+        if (checkColor(x + i, y, 1, 0, currentColor))
+            return true;
+        if (checkColor(x + i, y + i, 1, 1, currentColor))
+            return true;
+        if (checkColor(x + i, y - i, 1, -1, currentColor))
+            return true;
+        if (checkColor(x, y + i, 0, 1, currentColor))
+            return true;
+    }
+    return false;
+}
+ 
+function checkColor(x, y, xChange, yChange, currentColor) {
+    for (var i = 0; i < 5; i++) {
+        var id = (x + i * xChange) + "," + (y + i * yChange);
+        if (doc(id) == null || doc(id).style.backgroundColor != currentColor) {
+            return false;
+        }
+    }
+    return true;
+}
+</script>
+</head>
+<body style ="width:1000px; heigth:750px" oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+<input type="button" value="悔棋" onclick="undo()"/>
+<input type="button" value="撤销" onclick="unundo()"/>
+<input type="button" id="btn_again" value="再来一局" style="display:none" onclick="init()">
+<input type="button" value="重来" onclick="javascript:location.reload()">
+<input type="text" disabled="disabled" id="txt_Red" value="Red:0"/>
+<input type="text" disabled="disabled" id="txt_Blue" value="Blue:0"/>
+<table id="table1"></table>
+</body>
+</html>

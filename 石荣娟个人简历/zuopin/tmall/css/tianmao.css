@@ -1,0 +1,205 @@
+ul li{list-style-type: none;}
+a{ text-decoration: none;}
+#content .main-active{width:1349px; height:4050px; background:#F5F5F5;}
+#content .main-active .container{
+	width:1349px; height:4047px; margin-top:60px; background:#F5F5F5;}
+#content .main-active #logo{ position:relative;width: 1228px; height: 437px; margin: 0 auto; }
+#content .main-active #logo .left{ width: 508px; height: 436px; float: left; }
+#content .main-active #logo .left img{ width: 508px; height: 436px;}
+#content .main-active #logo .right{ position:absolute; right:-12px;top:0px;width: 720px; height: 436px;}
+#content .main-active #logo .right div.pl{width:720px; height: 109px;}
+#content .main-active #logo .right .pl ul{ width: 720px; height: 109px;}
+#content .main-active #logo .right .pl ul li{position:relative; width: 118px; height: 109px;float: left; list-style-type: none;}
+#content .main-active #logo .right .pl ul li img{ width: 118px; height: 109px;}
+#content .main-active #logo .right .pl ul li .img-mask{position:absolute;top:-3px;left:0px; width:118px; height:112px;background:url(../images/3.png);display:none;}
+
+#content .main-active #block{ width:1228px; height:474px; margin-left:60px; margin-right:60px; margin-top: 30px;  position:relative;}
+#content .main-active #block .block0{ width:239px; height:474px; float:left;}
+#content .main-active #block .block0 img{ width:239px; height:36px;}
+#content .main-active #block  a{display:block;width:239px;height:217px; background:#FFF;}
+#content .main-active #block  a .item_title{width:239px; height:24px; text-align:center; font-size:16px; font-weight:bold; color:#000;  margin-top:0px;}
+#content .main-active #block  a .item_sub_title{ width:239px; height:14px; text-align:center; font-size:10px; font-weight:100; color:#999;}
+#content .main-active #block  a .img_con{width:239px; height:179px;}
+#content .main-active #block a .img_con .img_mask{position:absolute;z-index:3;margin-left:60px; margin-top:30px; width:120px; height:120px;border-radius:60px;border:#CCC solid 1px; background:#CCC;}
+#content .main-active #block  a .img_con .img_mask img{ width:120px; height:120px; transition:width 1s;}
+#content .main-active #block  a .img_con .img_mask img:hover{ animation:myfirst 1s;}
+#content .main-active #block  .seprate{ width:215px; height:1px; margin-left:12px;}
+#content .main-active #block .block1{ width:239px; height:474px; margin-left:8px; position:absolute; left:240px; top:0px;}
+#content .main-active #block .block2{ width:239px; height:474px; margin-left:8px; position:absolute; left:488px; top:0px;}
+#content .main-active #block .block3{ width:239px; height:474px;position:absolute; right:246px; top:0px;}
+#content .main-active #block .block4{ width:239px; height:474px;position:absolute; right:0px; top:0px;}
+#content .main-active .pic1{ width:1228px; height:90px; margin-left:60px; margin-top:10px; background:url(../images/93.jpg);}
+#content .main-active .pic1 a,
+#content .main-active .pic2 a,
+#content .main-active .pic3 a{display:block; width:1228px; height:90px;}
+#content .main-active  #beauty,
+#content .main-active #health,
+#content .main-active #home,
+#content .main-active #outdoors,
+#content .main-active #kids{ width:1228px; height:476px; margin-left:60px; margin-top:25px; }
+#content .main-active  #beauty .a,
+#content .main-active #health .a,
+#content .main-active #home .a,
+#content .main-active #outdoors .a,
+#content .main-active #kids .a{ position:relative;width:1228px; height:28px;}
+#content .main-active  #beauty .a .item1{position:absolute; left:0px; bottom:0px; width:6px; height:22px; background:#F0F; }
+#content .main-active  #health .a .item1{ position:absolute; left:0px; bottom:0px; width:6px; height:22px; background:#0F0;}
+#content .main-active  #home .a .item1{ position:absolute; left:0px; bottom:0px; width:6px; height:22px; background:#F39;}
+#content .main-active  #outdoors .a .item1{ position:absolute; left:0px; bottom:0px; width:6px; height:22px; background: #0F3;}
+#content .main-active  #kids .a .item1{ position:absolute; left:0px; bottom:0px; width:6px; height:22px; background: #FC0;}
+#content .main-active  #beauty .a .item2,
+#content .main-active  #health .a .item2,
+#content .main-active  #home .a .item2,
+#content .main-active  #outdoors .a .item2,
+#content .main-active  #kids .a .item2{position:absolute; left:10px;bottom:0px; font-size: 20px; font-weight: 400; color: #000;}
+#content .main-active  #beauty .a .item3,
+#content .main-active  #health .a .item3,
+#content .main-active  #home .a .item3,
+#content .main-active  #outdoors .a .item3,
+#content .main-active  #kids .a .item3{position:absolute; left:100px;bottom:0px; font-size: 16px; font-weight: 400; color: #000;}
+#content .main-active  #beauty .a .right,
+#content .main-active  #health .a .right,
+#content .main-active  #home .a .right,
+#content .main-active  #outdoors .a .right,
+#content .main-active  #kids .a .right{ position:absolute; left:642px; bottom:0px; }
+#content .main-active  #beauty .a .right ul,
+#content .main-active  #health .a .right ul,
+#content .main-active  #home .a .right ul,
+#content .main-active  #outdoors .a .right ul,
+#content .main-active  #kids .a .right ul{width:584px; height:28px;}
+#content .main-active  #beauty .a .right ul li,
+#content .main-active  #health .a .right ul li,
+#content .main-active  #home .a .right ul li,
+#content .main-active  #outdoors .a .right ul li,
+#content .main-active  #kids .a .right ul li{float:left; font-size:14px; padding-bottom:0px; padding-left:22px; padding-top:8px;}
+#content .main-active  #beauty .a .right ul li:hover,
+#content .main-active  #health .a .right ul li:hover,
+#content .main-active  #home .a .right ul li:hover,
+#content .main-active  #outdoors .a .right ul li:hover,
+#content .main-active  #kids .a .right ul li:hover,{ text-decoration:underline;}
+#content .main-active  #beauty .b,
+#content .main-active  #health .b,
+#content .main-active  #home .b,
+#content .main-active  #outdoors .b,
+#content .main-active  #kids .b{ width:1228px; height:446px; margin-top:0px; margin-left:0px; position:relative;}
+#content .main-active  #beauty .b a,
+#content .main-active  #health .b a,
+#content .main-active  #home .b a,
+#content .main-active  #outdoors .b a,
+#content .main-active  #kids .b a{ display:block; width:1228px; height:446px;}
+#content .main-active  #beauty .b .left,
+#content .main-active  #health .b .left,
+#content .main-active  #home .b .left,
+#content .main-active  #outdoors .b .left,
+#content .main-active  #kids .b .left{ float:left;width:246px; height:446px;}
+#content .main-active  #beauty .b .left .pc1{width:246px; height:302px; background: url(../images/96.jpg);}
+#content .main-active  #health .b .left .pc1{width:246px; height:302px; background: url(../images/114.jpg);}
+#content .main-active  #home .b .left .pc1{width:246px; height:302px; background: url(../images/67.png);}
+#content .main-active  #outdoors .b .left .pc1{width:246px; height:302px; background: url(../images/117.jpg);}
+#content .main-active  #kids .b .left .pc1{width:246px; height:302px; background: url(../images/119.jpg);}
+#content .main-active  #beauty .b .left .pc2,
+#content .main-active  #health .b .left .pc2,
+#content .main-active  #home .b .left .pc2,
+#content .main-active  #outdoors .b .left .pc2,
+#content .main-active  #kids .b .left .pc2{ width:246px; height:20px; margin-top:10px;text-align:center; color:#000; font-size:12px;}
+#content .main-active  #beauty .b .left .pc2:hover,
+#content .main-active  #health .b .left .pc2:hover,
+#content .main-active  #home .b .left .pc2:hover,
+#content .main-active  #outdoors .b .left .pc2:hover,
+#content .main-active  #kids .b .left .pc2:hover{ text-decoration:none; color:#F00;}
+#content .main-active  #beauty .b .left .pc3{ width:246px; height:115px; background: url(../images/66.png);}
+#content .main-active  #health .b .left .pc3{ width:246px; height:115px; background: url(../images/61.png); }
+#content .main-active  #home .b .left .pc3{ width:246px; height:115px; background: url(../images/68.png);}
+#content .main-active  #outdoors .b .left .pc3{ width:246px; height:115px; background: url(../images/63.png);}
+#content .main-active  #kids .b .left .pc3{ width:246px; height:115px; background: url(../images/64.png);}
+#content .main-active  #beauty .b .zhongjian,
+#content .main-active  #health .b .zhongjian,
+#content .main-active  #home .b .zhongjian,
+#content .main-active  #outdoors .b .zhongjian,
+#content .main-active  #kids .b .zhongjian{ float:left; width:736px; height:446px;  }
+#content .main-active  #beauty .b .zhongjian ul,
+#content .main-active  #health .b .zhongjian ul,
+#content .main-active  #home .b .zhongjian ul,
+#content .main-active  #outdoors .b .zhongjian ul,
+#content .main-active  #kids .b .zhongjian ul{width:737px; height:446px;}
+#content .main-active  #beauty .b .zhongjian ul li,
+#content .main-active  #health .b .zhongjian ul li,
+#content .main-active  #home .b .zhongjian ul li,
+#content .main-active  #outdoors .b .zhongjian ul li,
+#content .main-active  #kids .b .zhongjian ul li{ position:relative;float:left;width:240px; height:222px; margin-left:1px; background:#FFF; margin-top:1px;}
+#content .main-active  #beauty .b .zhongjian ul li .s1,
+#content .main-active  #health .b .zhongjian ul li .s1,
+#content .main-active  #home .b .zhongjian ul li .s1,
+#content .main-active  #outdoors .b .zhongjian ul li .s1,
+#content .main-active  #kids .b .zhongjian ul li .s1{ width:245px; height:22px; font-size:20px; color:#000; font-weight:600; margin-left:20px;}
+#content .main-active  #beauty .b .zhongjian ul li .s2,
+#content .main-active  #home .b .zhongjian ul li .s2{ width:245px; height:18px; font-size:14px; color:#C09; font-weight:300; margin-left:20px; margin-top:7px;}
+#content .main-active  #health .b .zhongjian ul li .s2,
+#content .main-active  #outdoors .b .zhongjian ul li .s2{ width:245px; height:18px; font-size:14px; color:#0C6; font-weight:300; margin-left:20px; margin-top:7px;}
+#content .main-active  #kids .b .zhongjian ul li .s2{ width:245px; height:18px; font-size:14px; color:#F90; font-weight:300; margin-left:20px; margin-top:7px;}
+#content .main-active  #beauty .b .zhongjian ul li img,
+#content .main-active  #health .b .zhongjian ul li img,
+#content .main-active  #home .b .zhongjian ul li img,
+#content .main-active  #outdoors .b .zhongjian ul li img,
+#content .main-active  #kids .b .zhongjian ul li img{ position:absolute; right:4px; bottom:2px; width:126px; height:126px; transition:right  0.5s;}
+
+#content .main-active  #beauty .b .zhongjian ul li img:hover,
+#content .main-active  #health .b .zhongjian ul li img:hover,
+#content .main-active  #home .b .zhongjian ul li img:hover,
+#content .main-active  #outdoors .b .zhongjian ul li img:hover,
+#content .main-active  #kids .b .zhongjian ul li img:hover{ right:12px;}
+#content .main-active  #beauty .b .right,
+#content .main-active  #health .b .right,
+#content .main-active  #home .b .right,
+#content .main-active  #outdoors .b .right,
+#content .main-active  #kids .b .right{ position:absolute;  height:450px; width:257px;  right:0px;}
+#content .main-active  #beauty .b .right ul,
+#content .main-active  #health .b .right ul,
+#content .main-active  #home .b .right ul,
+#content .main-active  #outdoors .b .right ul,
+#content .main-active  #kids .b .right ul{ height:446px; width:255px;}
+#content .main-active  #beauty .b .right ul li,
+#content .main-active  #health .b .right ul li,
+#content .main-active  #home .b .right ul li,
+#content .main-active  #outdoors .b .right ul li,
+#content .main-active  #kids .b .right ul li{ position:relative; background:#FFF;width:255px; height:147px; margin-top:1px;}
+#content .main-active  #beauty .b .right ul li .s1,
+#content .main-active  #health .b .right ul li .s1,
+#content .main-active  #home .b .right ul li .s1,
+#content .main-active  #outdoors .b .right ul li .s1,
+#content .main-active  #kids .b .right ul li .s1{ width:255px; height:22px; font-size:20px; color:#000; font-weight:600; margin-left:20px;}
+#content .main-active  #beauty .b .right ul li .s2,
+#content .main-active  #home .b .right ul li .s2{ width:255px; height:18px; font-size:14px; color:#C09; font-weight:300; margin-left:20px; margin-top:7px;}
+#content .main-active  #outdoors .b .right ul li .s2,
+#content .main-active  #health .b .right ul li .s2{ width:255px; height:18px; font-size:14px; color:#0C6; font-weight:300; margin-left:20px; margin-top:7px;}
+#content .main-active  #kids .b .right ul li .s2{ width:255px; height:18px; font-size:14px; color:#F90; font-weight:300; margin-left:20px; margin-top:7px;}
+
+#content .main-active  #beauty .b .right ul li img,
+#content .main-active  #health .b .right ul li img,
+#content .main-active  #home .b .right ul li img,
+#content .main-active  #outdoors .b .right ul li img,
+#content .main-active  #kids .b .right ul li img{ position:absolute; right:4px; bottom:0px;  width:100px; height:100px; transition: right 0.5s;}
+#content .main-active  #beauty .b .right ul li img:hover,
+#content .main-active  #health .b .right ul li img:hover,
+#content .main-active  #home .b .right ul li img:hover,
+#content .main-active  #outdoors .b .right ul li img:hover,
+#content .main-active  #kids .b .right ul li img:hover{ right:12px;}
+#content .main-active .pic2{ width:1228px; height:90px; margin-left:60px; margin-top:10px; background: url(../images/51.jpg);}
+#content .main-active .pic3{ width:1228px; height:90px; margin-left:60px; margin-top:10px; background: url(../images/115X.jpg);}
+#content .main-active .pic4{ width:1228px; height:90px; margin-left:60px; margin-top:10px; background: url(../images/51.jpg);}
+#content .main-active .pic5{ width:1228px; height:90px; margin-left:60px; margin-top:10px; background: url(../images/115X.jpg);}
+#content .main-active .pic6{ width:1228px; height:90px; margin-left:60px; margin-top:10px; background: url(../images/93.jpg);}
+@keyframes myfirst
+{
+	from {width:120px; height:120px}
+	to { width:130px; height:130px;}
+
+
+
+
+
+
+
+
+
+

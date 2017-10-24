@@ -1,0 +1,97 @@
+#about{
+	width:800px;
+	height:500px;
+	margin-left: 50px; 
+	
+}
+#box{
+	
+	width:500px; 
+	height: 320px; 
+	background:url(../images/bg1.jpg) no-repeat 15%; 
+	margin:0px auto ; 
+	position:relative; 
+	perspective: 1200px; 
+	font-family: "microsoft yahei";
+	border-radius:10%;
+	
+}
+#box .pag1{
+	
+	width: 50%; 
+	height: 100%; 
+	position: absolute; 
+	top: 0; right: 0; 
+	transform-style:preserve-3d; 
+	transistion:2s all ease; 
+	z-index:2; 
+	transform-origin:left center ;
+	border:2px #f0f solid;
+	border-radius:20%;
+}
+#box .pag1 span{
+	width: 100%; 
+	height: 100%; 
+	position: absolute; 
+	top: 0; left: 0;
+}
+.front{
+	
+	background: url(../images/srj1.jpg) no-repeat right;
+	background-size: 100%;
+	transform: translateZ(1.1px);
+	 border:2px #f0f solid;
+	 border-radius:20%;
+}
+.back{
+	
+	background: url(../images/srj2.jpg) no-repeat left ;
+	background-size: 100%;
+	transform: translateZ(-1.1px);
+	border:2px #f0f solid;
+	border-radius:20%;
+}
+.pag2{
+
+	width:50%; 
+	position:absolute; 
+	right:0; 
+	top:0; 
+	height:100%; 
+	background:url(../images/srj1.jpg) no-repeat right 0px -50px;
+	background-size: 100%;
+	z-index:1;
+	border:2px #f0f solid;
+	border-radius:20%;
+}
+.srj{
+	width:50px;
+	height:330px;
+	position:absolute;
+	left:80px;
+	top:30px;
+	color:#fff;
+	display:inline;
+	text-align: center;
+	
+}
+.srj span{
+	position:relative;
+	font-size:26px;
+	display:inline-block;
+	font-weight: bold;
+	font-family:"Finger Paint";
+	text-shadow: 0 0 0 whitesmoke;
+    transform:rotate(30deg);	
+}
+.introduce{
+	width:500px;
+	height:120px;
+	position:absolute;
+	bottom:80px;
+	color:#fff;
+	left:250px;
+	font-size:24px;
+	line-height:35px;
+	font-family:"Finger Paint";
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		a{ text-decoration: none; }
+		#bg{ width: 300px;height: 300px;display: flex;flex-wrap: wrap;  }
+		#bg>div{ width: 100px;height: 100px;box-sizing: border-box;border: 1px solid #fff;background: url(../img/zy.jpg) no-repeat ;background-position: 0 0; }
+	/* 	 #bg>div:nth-child(1){ background-position: 0px 0px; } 
+	 		#bg>div:nth-child(2){ background-position: -100px 0px; } 
+	 		#bg>div:nth-child(3){ background-position: -200px 0px; } 
+	 		#bg>div:nth-child(4){ background-position: 0 -121px; } 
+	 		#bg>div:nth-child(5){ background-position: -100px -121px; } 
+	 		#bg>div:nth-child(6){ background-position: -200px -121px; } 
+	 		#bg>div:nth-child(7){ background-position: 0 -242px; } 
+	 		#bg>div:nth-child(8){ background-position: -100px -242px; } 
+	 		#bg>div:nth-child(9){ background-position: -200px -242px; }  */ 
+	</style>
+</head>
+<body>
+	<div id="bg">
+		
+	</div>
+	<input type="button" value="打乱">
+	<a href="../zy_about.html">返回</a>
+	<script>
+		var btn=document.getElementsByTagName('input')[0];
+
+		var bg=document.getElementById('bg');
+		for (var i = 0; i < 9; i++) {
+			bg.innerHTML+='<div></div>';
+		}
+		var div=document.getElementsByTagName('div');
+		// var arr=['0px 0px','-100px 0px','-200px 0px','0px -121px','-100px -121px','-200px -121px','0px -242px','-100px -242px','100px 100px'];
+		var arr=[];
+		for (var i = 0; i < 3; i++) {
+			for (var j = 0; j < 3; j++) {
+				arr[i*3+j]='-'+j*100+'px '+'-'+i*100+'px';
+			}
+		}
+		
+		var num=9;var old=null;
+		var arr1=arr;
+		/*function getRandomArrayElements(arr, count) {
+		    	var shuffled = arr.slice(0), i = arr.length-1, min = i - count, temp, index;
+		    	while (i-- > min) {
+		       		index = Math.floor((i + 1) * Math.random());
+		        	temp = shuffled[index];
+		        	shuffled[index] = shuffled[i];
+		        	shuffled[i] = temp;
+		    	}
+		    	return shuffled.slice(min);
+			}
+		arr=getRandomArrayElements(arr, 8);*/
+		function aaaaaaa(){
+			var arr2 = [];
+				for(var i=0; i<8; i++){
+					arr2.push(arr[i]);
+				}
+
+				arr2.sort(function(a, b){
+					return Math.random() - 0.5;
+				})
+				return arr2;
+		}
+		arr=aaaaaaa();
+		btn.onclick=function(){
+			arr=aaaaaaa();
+			// console.log(arr);
+			arr[8]='100px 100px';
+			for (var i = 1; i < div.length-1; i++) {
+				div[i].style.backgroundPosition=arr[i-1];
+			}
+		};
+		arr[8]='100px 100px';
+		for (var i = 1; i < div.length-1; i++) {
+			div[i].style.backgroundPosition=arr[i-1];
+		}
+
+		div[num].style.backgroundPosition='100px 100px';
+		for (var i = 1; i < div.length; i++) {
+			div[i].index=i;
+			div[i].onclick=function(){
+				div[num].style.backgroundPosition=arr[this.index-1];
+				old=this.style.backgroundPosition;
+				arr[num-1]=arr[this.index-1];
+				arr[this.index-1]='100px 100px';
+				this.style.backgroundPosition='100px 100px';
+				num=this.index;
+				var n=0;
+				for (var i = 0; i < arr1.length; i++) {
+					if(arr1[i]==arr[i]){
+						n++;
+					}
+				}
+
+				if(n==8){
+					alert('you win!!!');
+				}
+				
+			};
+		}
+
+	</script>
+</body>
+</html>
