@@ -1,0 +1,46 @@
+#content .img_excel{
+	display:flex;
+	display:inline;
+	width:500px;
+	height:100%;
+	background:url(../images/imgxq/excel.jpg)
+	no-repeat 20px 20px;
+}
+nav ul li a:last-child{ 
+	margin-left:-20px;
+}
+main #main .main-left{
+	height:540px;
+}
+#main .main-right .people{
+    position:relative;
+	height:250px;		
+}
+#main .main-right .course{
+	height:130px;
+}
+#main .main-right .course .main a{
+	margin:20px;	
+	font-size:14px;
+	line-height:40px;
+}
+#main .main-left4 .main .list .list_tl ul li>div{
+	display:inline;
+	float:left;
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	background:url('../images/imgxq/ex8.jpg') ;
+}
+#main .main-left4 .main a:nth-child(3) .list .list_tl ul li>div,
+#main .main-left4 .main a:nth-child(5) .list .list_tl ul li>div{
+   background:url('../images/imgxq/ex9.jpg') 100%;
+}
+#main .main-left4 .main a:nth-child(4) .list .list_tl ul li>div,
+#main .main-left4 .main a:nth-child(6) .list_tl ul li>div{
+   background:url('../images/imgxq/ex10.jpg') 100%;
+}
+#main .main-left4 .main a:nth-child(7) .list .list_tl ul li>div,
+#main .main-left4 .main a:nth-child(8) .list .list_tl ul li>div{
+   background:url('../images/imgxq/ex4.jpg') 100%;
+}

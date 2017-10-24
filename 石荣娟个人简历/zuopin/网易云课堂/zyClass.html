@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>网易云课堂-课程列表</title>
+	<link rel="stylesheet" href="css/common.css">
+	<script src="js/jquery-1.11.1.js"></script>
+	<script src='js/common.js'></script>
+	<script src='js/zyClass.js'></script>
+	<link rel="stylesheet" href="css/zyClass.css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	<script src="font/iconfont.js"></script>
+	
+	<script>
+		window.onscroll=function(){
+		if(document.body.scrollTop||document.documentElement.scrollTop>0)
+			document.getElementById('article').style.display='block';
+		else
+			document.getElementById('article').style.display='none';
+	}
+	</script>
+
+</head>
+<body>
+	<header>
+		<div class="container head">
+			<div><a href="index.html"><img src="./images/zyClassList/logo3.png" alt=""></a></div>
+			<div>
+				<ul>
+					<li><a href="#">找课程</a></li>
+					<li><a href="specIntro.html">微专业</a></li>
+					<li class='linKs'><a href="">下载app</a>
+						<div class='linK'>
+							<div><img src="./images/zyClassList/erweima.png" alt=""></div>
+							<div>
+								<p>扫码下载官方APP</p>
+								<div><img src="./images/zyClassList/download_icon.png" alt=""></div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<div id='lesson'>课程<span></span>
+					<div id='give'>提供方</div>
+				</div>
+				<input type="text" placeholder="搜索课程">
+				<div>
+					<svg class="icon" aria-hidden="true">
+					  <use xlink:href="#icon-sousuo"></use>
+					</svg>
+				</div>
+			</div>
+			<div>
+				<ul>
+					<li><a href="">我的学习</a></li>
+					<li><a href="">消息</a></li>
+					<li><a href="gwcstt.html">购物车</a></li>
+					<li><a href="about.html">登录/注册</a></li>
+					<li><a href=""><img src="./images/zyClassList/small.jpg" alt=""></a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<section>
+		<div class="container top">
+			<div class="top1">
+				<a href="index.html">首页&gt;</a>
+				<a href="index.html">全部课程&gt;</a>
+				<a href="index.html">编程开发</a>
+			</div>
+			<div class="top2">
+				<ul><!-- section .top .top2>ul>li>div #one -->
+					<li class="jxhk"><a href="">精选好课</a>
+						<div>
+							<ul>
+								<li><a href="">全部</a></li>
+								<li><a href="">/HTML+CSS</a></li>
+								<li><a href="">/JavaScript</a></li>
+								<li><a href="">/HTML5</a></li>
+								<li><a href="">/jQuery</a></li>
+								<li><a href="">/Bootstrap</a></li>
+								<li><a href="">/AngularJS</a></li>
+								<li><a href="">/React</a></li>
+								<li><a href="">/Vue.js</a></li>
+								<li><a href="">/ExtJS</a></li>
+								<li><a href="">/开发框架</a></li>
+							</ul>
+						</div> 
+					</li>
+					<li><a href="#">编程语言</a>
+						<div>
+							<ul >
+								<li><a href="">全部</a></li>
+								<li><a href="">/ Python</a></li>
+								<li><a href="">/ PHP</a></li>
+								<li><a href="">/ Java</a></li>
+								<li><a href="">/ C</a></li>
+								<li><a href="">/ C++</a></li>
+								<li><a href="">/ C#</a></li>
+								<li><a href="">/ Swift</a></li>
+								<li><a href="">/ R</a></li>
+								<li><a href="">/ Git</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="./zyClassList.html">前端开发</a>
+						<div>
+							<ul >
+								<li><a href="">全部</a></li>
+								<li><a href="">/HTML+CSS</a></li>
+								<li><a href="">/JavaScript</a></li>
+								<li><a href="">/HTML5</a></li>
+								<li><a href="">/jQuery</a></li>
+								<li><a href="">/Bootstrap</a></li>
+								<li><a href="">/AngularJS</a></li>
+								<li><a href="">/React</a></li>
+								<li><a href="">/Vue.js</a></li>
+								<li><a href="">/ExtJS</a></li>
+								<li><a href="">/开发框架</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">后端开发</a>
+						<div>
+							<ul > 
+								<li><a href="">全部</a></li> 
+				            	<li><a href="">/ Node.js</a></li>
+				            	<li><a href="">/ .NET</a></li>
+				            	<li><a href="">/ J2EE</a></li>
+				            	<li><a href="">/ Go</a></li>
+				            	<li><a href="">/ 开发实践</a></li>
+				            </ul>  
+						</div>
+					</li>
+					<li><a href="#">移动开发</a>
+						<div>
+							<ul >
+								<li><a href="">全部</a></li>
+								<li><a href="">/ iOS</a></li>
+								<li><a href="">/ Android</a></li>
+								<li><a href="">/ Windows Phone</a></li>
+								<li><a href="">/ 手游开发</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">数据处理</a>
+						<div>
+							<ul >
+								<li><a href="">全部</a></li>
+						    	<li><a href="">/ 大数据</a></li>
+						    	<li><a href="">/ MySQL</a></li>
+						    	<li><a href="">/ Oracle</a></li>
+						    	<li><a href="">/ SQL Server</a></li>
+						    </ul>
+						</div>
+					</li>
+					<li><a href="#">系统/硬件</a>
+						<div>
+							<ul >
+								<li><a href="">全部</a></li>
+								<li><a href="">/ 信息安全</a></li>
+								<li><a href="">/ 操作系统</a></li>
+								<li><a href="">/ 物联网</a></li>
+								<li><a href="">/ 运维管理</a></li>
+								<li><a href="">/ 硬件开发</a></li>
+							</ul>    
+						</div>
+					</li>
+				</ul>
+			</div>	
+		</div>
+		<div class="body">
+			<div class="body1">
+				<div id="lbt">
+					<div style="z-index:1;"><img src="./images/zyClassList/banner1.png" alt="" id="imgban"></div>
+					<div><img src="./images/zyClassList/banner2.jpg" alt="" id="imgban"></div>
+					<div><img src="./images/zyClassList/banner3.png" alt="" id="imgban"></div>
+					<div><img src="./images/zyClassList/banner4.jpg" alt="" id="imgban"></div>
+					<div><img src="./images/zyClassList/banner5.jpg" alt="" id="imgban"></div>
+				</div>
+				<a id="btnl" href="javascript:;">&lt;</a>
+				<a id="btnr" href="javascript:void(0);">&gt;</a>
+				<ul id="bullets">
+						<li class="_hover"></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+				</ul>
+				<nav>
+					<ul id="zy_xxk">
+						<li class="active "><a >付费排行</a>	</li>
+						<li><a >免费排行</a>	</li>
+					</ul>
+					<div id="navl" class="aaanav">
+						<ul>
+							<li><span>01</span><a href="">python数据分析与机器学习实战</a></li>
+							<li><span>02</span><a href="">Java应用基础：项目实战篇</a></li>
+							<li><span>03</span><a href="">Java应用基础：工程篇</a></li>
+							<li><span>04</span><a href="">Java应用基础：入门篇</a></li>
+							<li><span>05</span><a href="">Java应用基础：设计篇</a></li>
+							<li><span>06</span><a href="">Java应用基础：进阶篇</a></li>
+							<li><span>07</span><a href="">从零到一，Python网页爬虫攻略</a></li>
+							<li><span>08</span><a href="">ASP.NET网站工程师-全栈开发课程</a></li>
+							<li><span>09</span><a href="">SQL数据分析实战</a></li>
+							<li><span>10</span><a href="">WEB安全实战</a></li>
+						</ul>
+					</div>
+					<div id="navr" >
+						<ul>
+							<li><span>01</span><a href="">零基础学编程系列之C语言</a></li>
+							<li><span>02</span><a href="">零基础入门学习Python</a></li>
+							<li><span>03</span><a href="">Java零基础入门教程—包含面向对象</a></li>
+							<li><span>04</span><a href="">8小时学会HTML网页开发</a></li>
+							<li><span>05</span><a href="">疯狂的Python：快速入门精讲</a></li>
+							<li><span>06</span><a href="">【JavaScript】全栈WEB前端工程师进阶班</a></li>
+							<li><span>07</span><a href="">智能社：JavaScript教程-从入门到精通</a></li>
+							<li><span>08</span><a href="">Python网络爬虫实战</a></li>
+							<li><span>09</span><a href="">李炎恢JavaScript教程 第一季</a></li>
+							<li><span>10</span><a href="">从零开始玩转HTML5前端</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			
+		</div>
+		<div class="container bodykc">
+			
+			<div class="div1">
+				<h2>系列课程</h2><p>更多》</p>
+				<ul>
+					<li><div><a href="">
+							<img src="./images/zyClassList/zy_bodykc11.jpg" alt="1">
+						
+						<div><h4>玩转三大操作系统</h4><p>真正了解计算机</p></div></a>
+						</div></li>
+					<li><div><a href="">
+							<img src="./images/zyClassList/zy_bodykc12.jpg" alt="2">
+					
+						<div><h4>Python从0到精通</h4><p>实例教学。逐步掌握python</p></div>	</a>
+						</div></li>
+					<li><div><a href="">
+							<img src="./images/zyClassList/zy_bodykc13.jpg" alt="3">
+					
+						<div><h4>JAVA新手快速入门攻略</h4><p>从入门到进阶再到应用</p></div>	</a>
+						</div></li>
+					<li>
+						<div>
+							<ul>
+								<li><a href="">R数据分析与数据挖掘实战</a></li>
+								<li><a href="">手把手教你做电商</a></li>
+								<li><a href="">Android开发入门</a></li>
+								<li><a href="">微信运营营销全攻略</a></li>
+								<li><a href="">小白学做H5酷炫动画</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>     
+			<div class="div2">
+				<h2>编程开发</h2><a href="">编程语言</a><a href="">前端开发</a><a href="">后端开发</a><a href="">移动开发</a><p>更多》</p>
+				<ul>
+					<li>
+						<div><a href=""><img src="./images/zyClassList/zy_bodykc21.png" alt=""></a></div>
+					</li>
+					<li>
+						<div><a href="">
+								<img src="./images/zyClassList/zy_bodykc22.png" alt="">
+								
+							</a></div><p><span>Python数据</span>
+							数据科学入门与应用</p>
+						<div><a href="">
+								<img src="./images/zyClassList/zy_bodykc26.png" alt="">
+							</a></div>
+							<p><span>Laravel入门</span>
+							JavaScript</p>
+					</li>
+					<li>
+						
+						<div><a href="">
+								<img src="./images/zyClassList/zy_bodykc23.jpg" alt="">
+							
+							</a></div>	<p><span>Python实战</span>
+							前端开发小实例</p>
+						<div><a href="">
+								<img src="./images/zyClassList/zy_bodykc27.png" alt="">
+								
+							</a></div><p><span>李炎恢老师</span>
+							HTML5</p>
+						
+					</li>
+					<li>
+						
+						<div><a href="">
+								<img src="./images/zyClassList/zy_bodykc24.jpg" alt="">
+								
+							</a></div><p><span>JAVA基础</span>
+							JAVA</p>
+						<div><a href="">
+								<img src="./images/zyClassList/zy_bodykc28.jpg" alt="">
+								
+							</a></div><p><span>jQuery视频</span>
+							jQuery</p>
+
+					</li>
+					<li>
+						<div>
+							<ul>
+								<li><a href="">30分钟轻松制作HTML5</a></li>
+								<li><a href="">零基础学会网页设计</a></li>
+								<li><a href="">8节课让你变成H5大神</a></li>
+								<li><a href="">8小时学会HTML网页开发</a></li>
+							</ul>
+						</div>
+						<div><a href=""><img src="./images/zyClassList/zy_bodykc25.png" alt=""></a></div>
+					</li>
+				</ul>
+			</div>    
+ 
+			<div class="div3">
+				<h2>数据处理</h2><a href="">数据库</a><a href="">MySQL</a><a href="">大数据</a><a href="">SQL数据</a><p>更多》</p>
+				<ul>
+
+					<li>
+						<div><a href="">
+								<img src="./images/zyClassList/zy_bodykc31.png" alt=""></a>
+						</div>
+				
+						<div>
+							<div class="left">
+								<div><a href="">
+								<img src="./images/zyClassList/zy_bodykc34.jpg" alt="">
+								</a>
+								</div>
+								<p><span>Python数据</span>Linux</p>
+							</div>
+							<div class="right">
+								<div><a href="">
+								<img src="./images/zyClassList/zy_bodykc35.jpg" alt="">
+								</a></div>
+								<p><span>Laravel入门</span>
+							JavaScript</p>
+							</div>
+						</div>
+
+					</li>
+					<li>
+						
+						<div><a href="">
+								<img src="./images/zyClassList/zy_bodykc32.jpg" alt="">
+							
+							</a></div>	<p><span>Python实战</span>
+							Linux</p>
+						<div><a href="">
+								<img src="./images/zyClassList/zy_bodykc33.jpg" alt="">
+								
+							</a></div><p><span>李炎恢老师</span>
+							JAVA</p>
+						
+					</li>
+					<li>
+						
+						<div><a href="">
+								<img src="./images/zyClassList/zy_bodykc36.jpg" alt="">
+								
+							</a></div><p><span>JAVA基础</span>
+							JAVA</p>
+						<div><a href="">
+								<img src="./images/zyClassList/zy_bodykc37.png" alt="">
+								
+							</a></div><p><span>jQuery视频</span>
+							jQuery</p>
+
+					</li>
+					<li>
+						<div>
+							<ul>
+								<li><a href="">30分钟轻松制作HTML5</a></li>
+								<li><a href="">零基础学会网页设计</a></li>
+								<li><a href="">8节课让你变成H5大神</a></li>
+								<li><a href="">8小时学会HTML网页开发</a></li>
+							</ul>
+						</div>
+						<div><a href=""><img src="./images/zyClassList/zy_bodykc38.png" alt=""></a></div>
+					</li>
+				</ul>
+			</div>
+			<div class="div3">   
+				<h2>系统/硬件</h2><a href="">操作系统</a><a href="">信息安全</a><a href="">信息安全</a><a href="">硬件开发</a><p>更多》</p>
+				<ul>
+
+					<li>
+						<div><a href="">
+								<img src="./images/zyClassList/zy_bodykc41.png" alt=""></a></div>
+				
+					<div>	<div class="left"><div><a href="">
+								<img src="./images/zyClassList/zy_bodykc44.png" alt="">
+							</a>
+						</div>
+							<p><span>Python数据</span>H5第一</p></div>
+						<div class="right"><div><a href="">
+								<img src="./images/zyClassList/zy_bodykc45.jpg" alt="">
+							</a></div>
+							<p><span>Laravel入门</span>
+							JavaScript</p></div></div>
+
+					</li>
+					<li>
+						
+						<div><a href="">
+								<img src="./images/zyClassList/zy_bodykc42.png" alt="">
+							
+							</a></div>	<p><span>Python实战</span>
+							Linux</p>
+						<div><a href="">
+								<img src="./images/zyClassList/zy_bodykc43.png" alt="">
+								
+							</a></div><p><span>李炎恢老师</span>
+							HTML5</p>
+						
+					</li>
+					<li>
+						
+						<div><a href="">
+								<img src="./images/zyClassList/zy_bodykc46.jpg" alt="">
+								
+							</a></div><p><span>JAVA基础</span>
+							JAVA</p>
+						<div><a href="">
+								<img src="./images/zyClassList/zy_bodykc47.png" alt="">
+								
+							</a></div><p><span>jQuery视频</span>
+							jQuery</p>
+
+					</li>
+					<li>
+						<div>
+							<ul>
+								<li><a href="">30分钟轻松制作HTML5</a></li>
+								<li><a href="">零基础学会网页设计</a></li>
+								<li><a href="">8节课让你变成H5大神</a></li>
+								<li><a href="">8小时学会HTML网页开发</a></li>
+							</ul>
+						</div>
+						<div><a href=""><img src="./images/zyClassList/zy_bodykc48.png" alt=""></a></div>
+					</li>
+				</ul>
+			</div>
+			<div class="div4"></div>
+		</div>
+	</section>
+
+	<article id='article'>
+		<ul>
+			<li>
+				<a href="">
+					<svg class="icon" aria-hidden="true">
+				 		<use xlink:href="#icon-xiaoxi"></use>
+					</svg>
+				</a>
+			</li>
+			<hr>
+			<li class='weixin'>
+				<div><img src="./images/zyClassList/erweima.png" alt="" width=100%></div>
+				<a href="">
+					<svg class="icon" aria-hidden="true">
+				 		<use xlink:href="#icon-shouji"></use>
+					</svg>
+				</a>
+			</li>
+			<hr>
+			<li class="toTop1">
+				<a >
+					<svg class="icon" aria-hidden="true">
+				 		<use xlink:href="#icon-u-arrow3-right-copy"></use>
+					</svg>
+				</a>
+			</li>
+		</ul>
+	</article>
+<!-- 	<section>
+	<div class="container section"></div>
+</section> -->
+	<footer>
+		<div class="container foot">
+			<div>
+				<div><img src="./images/zyClassList/logoFoot.png" alt="1"></div>
+				<p>网易公司(163.com)旗下实用技能学习平台。与优秀讲师、专业机构、院校合作，为您提供海量优质课程，以及创新的在线学习体验，帮助您获得全新的个人发展和能力提升。</p>
+				<div class="view">
+					<p>关注我们:</p>
+					<ul>
+						<li><a href=""></a></li>
+						<li><a href=""></a></li>
+						<li><a href=""></a></li>
+						<li class="weixin">
+						<div><img src="./images/zyClassList/erweima.png" alt="" width=100%></div>
+						<a href=""></a></li>
+					</ul>
+				</div>
+				<p>©1997-2017 网易公司 版权所有</p>
+			</div>
+			<div>
+				<ul>
+					<li><a href="">关于我们</a></li>
+					<li><a href="">联系我们</a></li>
+					<li><a href="">帮助中心</a></li>
+					<li><a href="">内容招募</a></li>
+					<li><a href="">意见反馈</a></li>
+					<li><a href="">企业服务</a></li>
+					<li><a href="">中国大学MOOC</a></li>
+				</ul>
+				<div>
+					<p>移动APP</p>
+					<ul>
+						<li><a href=""></a></li>
+						<li><a href=""></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer><!-- 
+	<script>
+		var oArticle=document.getElementById('article');
+		var qLi=oArticle.getElementsByTagName('li');
+		var weixin=document.getElementsByClassName('weixin');
+		var erweima1=weixin[0].getElementsByTagName('div');
+		var erweima2=weixin[1].getElementsByTagName('div');
+		weixin[0].onmouseover=function(){
+			erweima1[0].style.display='block';
+		}
+		weixin[0].onmouseout=function(){
+			erweima1[0].style.display='none';
+		}
+		weixin[1].onmouseover=function(){
+			erweima2[0].style.display='block';
+		}
+		weixin[1].onmouseout=function(){
+			erweima2[0].style.display='none';
+		}
+	</script> -->
+
+	
+</body>
+</html>
+

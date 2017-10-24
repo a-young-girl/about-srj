@@ -1,0 +1,74 @@
+#content .img_ppt{
+	display:flex;
+	display:inline;
+	width:500px;
+	height:100%;
+	background:url(../images/imgxq/ppt1.jpg)
+	no-repeat 20px 20px;
+}
+nav ul li a:last-child{ 
+	margin-left:-30px;
+}
+main #main .main-left{
+	height:1500px;
+}
+main #main .main-left2{
+	height:700px;
+}
+main #main .main-left3{
+	height:1300px;
+}
+#main .main-right .people{
+    position:relative;
+	height:270px;		
+}
+#main .main-right .course{
+	height:130px;
+}
+#main .main-right .course .main a{
+	margin:20px;	
+	font-size:14px;
+	line-height:40px;
+}
+main #main .main-left ul li:nth-child(2){
+	height:150px;
+}
+main #main .main-left ul li:nth-child(3),
+main #main .main-left ul li:nth-child(4),
+main #main .main-left ul li:nth-child(5),
+main #main .main-left ul li:nth-child(6){
+	height:365px;
+}
+main #main .main-left ul li img{
+	width:100%;
+	height:365px;
+}
+#main .main-left4 .main .list .list_tl ul li>div{
+	display:inline;
+	float:left;
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	background:url('../images/imgxq/ppt31.jpg') ;
+}
+#main .main-left4 .main a:nth-child(2) .list .list_tl ul li>div{
+	background:url('../images/imgxq/ppt32.jpg') 100%;
+}
+#main .main-left4 .main a:nth-child(3) .list .list_tl ul li>div{
+	background:url('../images/imgxq/ppt38.jpg') 100%;
+}
+#main .main-left4 .main a:nth-child(5) .list .list_tl ul li>div{
+   background:url('../images/imgxq/ppt33.jpg') 100%;
+}
+#main .main-left4 .main a:nth-child(4) .list .list_tl ul li>div{
+	background:url('../images/imgxq/ppt34.jpg') 100%;
+}
+#main .main-left4 .main a:nth-child(6) .list_tl ul li>div{
+   background:url('../images/imgxq/ppt35.jpg') 100%;
+}
+#main .main-left4 .main a:nth-child(7) .list .list_tl ul li>div{
+	background:url('../images/imgxq/ppt36.jpg') 100%;
+}
+#main .main-left4 .main a:nth-child(8) .list .list_tl ul li>div{
+   background:url('../images/imgxq/ppt37.jpg') 100%;
+}

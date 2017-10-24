@@ -1,0 +1,576 @@
+
+/* common part */
+.fl { float: left; }
+.fr { float: right; }
+.clear::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/* banner begin */
+.banner{
+	width: 100%;
+	height: 383px;
+	margin-top: 60px;
+	padding-top: 117px;
+	background: #ccc url('../images/imagesWeizhuanye/banner.jpg') no-repeat center center;
+}
+.banner .banner_con {
+	width: 960px;
+	margin: 0 auto;
+}
+.banner .banner_con div {
+	margin: 0 auto;
+	width: 270px;
+	height: 85px;
+	background: url('../images/imagesWeizhuanye/spirit.png') no-repeat;
+}
+.banner .banner_con p {
+	width: 600px;
+	line-height: 32px;
+	margin: 30px auto;
+	font-size: 20px;
+	text-align: center;
+	color: #fff;
+}
+.banner .banner_con a {
+	display: block;
+	margin: 0 auto;
+	width: 194px;
+	height: 44px;
+	line-height: 44px;
+	padding-left: 26px;
+	font-size: 20px;
+	color: #fff;
+	background: #278dc7 url('../images/imagesWeizhuanye/spirit.png') no-repeat 185px -91px;
+}
+.banner .banner_con a:hover {
+	background-color: #269bdd;
+}
+/* banner end */
+
+/* spec begin */
+.spec {
+	width: 100%;
+	padding: 40px 0;
+	background-color: #f0f0f0;
+}
+.spec .live { width: 345px; }
+.spec .live .live-top {
+	padding: 20px 20px 15px;
+	background-color: #1d91d4;
+}
+.spec .live .live-top .live-time {
+	font-size: 18px;
+	text-indent: 44px;
+	background: url('../images/imagesWeizhuanye/spirit.png') no-repeat 0 -154px;
+}
+.spec .live .live-top .live-time span {
+	font-size: 14px;
+	padding-left: 26px;
+}
+.spec .live .live-top .live-time span:hover {
+	text-decoration: underline;
+}
+.spec .live .live-top .live-des {
+    height: 49px;
+    line-height: 24px;
+    padding-top: 15px;
+    margin-top: 17px;
+	font-size: 14px;
+    border-top: 1px solid #349cd8;
+}
+.spec .live img {
+	width: 345px;
+	height: 330px;
+}
+.spec .video {
+	margin-left: 20px;
+	overflow: hidden;
+	width: 840px;
+}
+.spec .video .video-list {}
+.spec .video .video-list li {
+	position: relative;
+	display: inline-block;
+	height: 225px;
+	width: 400px;
+	margin: 0 20px 20px 0;
+}
+.spec .video .video-list li:hover::after {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: rgba(0, 0, 0, .7);
+	z-index: 1;
+}
+.spec .video .video-list li:hover .play {
+	background-position: -65px -197px;
+}
+.spec .video .video-list li img {
+	height: 225px;
+	width: 400px;
+}
+.spec .video .video-list .video-des {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 2;
+	width: 100%;
+	text-indent: 20px;
+}
+.spec .video .video-list .video-des h3 {
+	font-size: 20px;
+	font-weight: normal;
+}
+.spec .video .video-list .video-des p {
+	font-size: 14px;
+	line-height: 26px;
+	margin-top: 8px;
+	margin-bottom: 25px;
+}
+.play {
+	padding: 6px 15px;
+	background: url('../images/imagesWeizhuanye/spirit.png') no-repeat 0 -197px;
+}
+#video-play {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 2000px;
+	z-index: 99;
+}
+#video-play .video-mask {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 100;
+	width: 100%;
+	height: 100%;
+    opacity: 0.75;
+	background-color: #3b3b3b;
+}
+#video-play .video-wrap {
+	position: fixed;
+	top: 0;
+	left: 50%;
+	margin-left: -368px;
+	width: 650px;
+	margin-top: 70px;
+	padding: 20px 30px 0;
+	background: #fff;
+	z-index: 999;
+}
+#video-play .video-wrap video {
+	width: 650px;
+	border: 1px solid #ccc;
+}
+#close {
+	position: absolute;
+	right: -50px;
+	top: 0;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 30px;
+	text-align: center;
+	color: #000;
+	background-color: #fff;
+	cursor: pointer;
+}
+#close:hover {
+	background-color: #eee;
+}
+/* spec end */
+
+/* teacher begin */
+.teacher {
+	padding: 80px 0;
+	background: #fff;
+}
+.teacher h2 {
+	width: 100%;
+	height: 38px;
+	background: url('../images/imagesWeizhuanye/title.png') no-repeat center -4px;
+}
+.teacher .tea-intro {
+	margin-top: 52px;
+	background: url('../images/imagesWeizhuanye/border.png') no-repeat 0 38px;
+}
+.teacher .tea-intro li {
+	position: relative;
+	float: left;
+	width: 300px;
+	height: 310px;
+	padding-top: 30px;
+	margin-right: 1px;
+}
+.teacher .tea-intro li:hover::after{
+	content: '计算机博士，浙江大学计算机学院教师，ACM-ICPC优秀教练奖得主，2011世界总决赛金牌教练。主要讲授包括C、C++、Java程序设计，程序设计语言原理，计算机体系结构，嵌入式系统等课程。';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+  padding: 34px 24px 42px;
+	font-size: 14px;
+	background-color: #1d91d4;
+	color: #fff;
+}
+.teacher .tea-intro li span {
+	display: block;
+	margin: 0 auto;
+	width: 110px;
+	height: 110px;
+	text-align: center;
+	border-radius: 50%;
+	border: 1px solid #e4e8e9;
+}
+.teacher .tea-intro li span img {
+	width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    margin: 7px auto;
+}
+.teacher .tea-intro li h4 {
+    margin-top: 20px;
+    line-height: 24px;
+    font-size: 24px;
+	font-weight: normal;
+    text-align: center;
+    color: #333d42;
+}
+.teacher .tea-intro li h5 {
+    margin-top: 20px;
+    line-height: 16px;
+	font-size: 16px;
+	font-weight: normal;
+    text-align: center;
+    color: #859295;
+}
+.teacher .tea-intro li i {
+	display: block;
+	text-align: center;
+	margin-top: 32px;
+	max-height: 50px;
+}
+/* teacher end */
+
+/* specGuide begin */
+.specGuide {
+	padding-top: 82px;
+	background: #1d91d4;
+}
+.specGuide h2 {
+	height: 38px;
+	background: url('../images/imagesWeizhuanye/title.png') no-repeat center -102px;
+}
+.specGuide .guide-bar {
+  	height: 170px;
+	margin-top: 60px;
+}
+/* .specGuide .guide-bar ul {
+	height: 170px;
+	width: 100%;
+} */
+/* .specGuide .guide-bar .guide-wrap {
+	position: fixed;
+  	top: 0;
+  	left: 0;
+	z-index: 10;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+} */
+.specGuide .guide-bar .fixtopGuide {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 10;
+  	width: 100%;
+  	height: 40px;
+  	padding: 10px 0 0;
+  	background: #1d91d4;
+}
+.specGuide .guide-bar .fixtopGuide ul {
+	width: 1205px;
+	height: 50px;
+	margin: 0 auto;
+}
+.specGuide .guide-bar .fixtopGuide li {
+	width: 100px;
+    padding-left: 60px;
+    margin: 0 20px;
+    background: transparent url('../images/imagesWeizhuanye/specGuide.png') 0 413px no-repeat;
+    font-size: 20px;
+    line-height: 30px;
+    height: 30px;
+    cursor: pointer;
+    color: #fff;
+    text-align: left;
+    float: left;
+    border-radius: 3px;
+    padding-top: 0;
+}
+.specGuide .guide-bar .fixtopGuide li:nth-child(1) {
+	background-position: 35px -408px;
+}
+.specGuide .guide-bar .fixtopGuide li:nth-child(1).active {
+	background-position: 35px -337px;
+}
+.specGuide .guide-bar .fixtopGuide li:nth-child(1):hover {
+	background-position: 35px -337px;
+}
+.specGuide .guide-bar .fixtopGuide li:nth-child(2) {
+	background-position: -171px -408px;
+}
+.specGuide .guide-bar .fixtopGuide li:nth-child(2).active {
+	background-position: -171px -337px;
+}
+.specGuide .guide-bar .fixtopGuide li:nth-child(2):hover {
+	background-position: -171px -337px;
+}
+.specGuide .guide-bar .fixtopGuide li:nth-child(3) {
+	background-position: -372px -408px;
+}
+.specGuide .guide-bar .fixtopGuide li:nth-child(3).active {
+	background-position: -372px -337px;
+}
+.specGuide .guide-bar .fixtopGuide li:nth-child(3):hover {
+	background-position: -372px -337px;
+}
+.specGuide .guide-bar .fixtopGuide li:nth-child(4) {
+	background-position: -573px -408px;
+}
+.specGuide .guide-bar .fixtopGuide li:nth-child(4).active {
+	background-position: -573px -337px;
+}
+.specGuide .guide-bar .fixtopGuide li:nth-child(4):hover {
+	background-position: -573px -337px;
+}
+.specGuide .guide-bar .fixtopGuide li:nth-child(5) {
+	background-position: -794px -408px;
+}
+.specGuide .guide-bar .fixtopGuide li:nth-child(5).active {
+	background-position: -794px -337px;
+}
+.specGuide .guide-bar .fixtopGuide li:nth-child(5):hover {
+	background-position: -794px -337px;
+}
+.specGuide .guide-bar .fixtopGuide li:nth-child(6) {
+	background-position: -994px -405px;
+}
+.specGuide .guide-bar .fixtopGuide li:nth-child(6).active {
+	background-position: -994px -337px;
+}
+.specGuide .guide-bar .fixtopGuide li:nth-child(6):hover {
+	background-position: -994px -337px;
+}
+.specGuide .guide-bar ul li {
+	float: left;
+	width: 160px;
+	height: 52px;
+	margin: 0 20px;
+	line-height: 24px;
+	padding-top: 118px;
+	border-radius: 3px 3px 0 0;
+	font-size: 24px;
+	text-align: center;
+	color: #fff;
+	background: url('../images/imagesWeizhuanye/specGuide.png') no-repeat 0 24px;
+	cursor: pointer;
+}
+.specGuide .guide-bar ul li:nth-child(1) {
+	background-position: 56px -146px;
+}
+.specGuide .guide-bar ul li:nth-child(1).active {
+	background-position: 56px 24px;
+}
+.specGuide .guide-bar ul li:nth-child(1):hover {
+	background-position: 56px 24px;
+}
+.specGuide .guide-bar ul li:nth-child(2) {
+	background-position: -145px -146px;
+}
+.specGuide .guide-bar ul li:nth-child(2).active {
+	background-position: -145px 24px;
+}
+.specGuide .guide-bar ul li:nth-child(2):hover {
+	background-position: -145px 24px;
+}
+.specGuide .guide-bar ul li:nth-child(3) {
+	background-position: -346px -146px;
+}
+.specGuide .guide-bar ul li:nth-child(3).active {
+	background-position: -346px 24px;
+}
+.specGuide .guide-bar ul li:nth-child(3):hover {
+	background-position: -346px 24px;
+}
+.specGuide .guide-bar ul li:nth-child(4) {
+	background-position: -547px -146px;
+}
+.specGuide .guide-bar ul li:nth-child(4).active {
+	background-position: -547px 24px;
+}
+.specGuide .guide-bar ul li:nth-child(4):hover {
+	background-position: -547px 24px;
+}
+.specGuide .guide-bar ul li:nth-child(5) {
+	background-position: -747px -146px;
+}
+.specGuide .guide-bar ul li:nth-child(5).active {
+	background-position: -747px 24px;
+}
+.specGuide .guide-bar ul li:nth-child(5):hover {
+	background-position: -747px 24px;
+}
+.specGuide .guide-bar ul li:nth-child(6) {
+	background-position: -949px -146px;
+}
+.specGuide .guide-bar ul li:nth-child(6).active {
+	background-position: -949px 24px;
+}
+.specGuide .guide-bar ul li:nth-child(6):hover {
+	background-position: -949px 24px;
+}
+.specGuide .guide-bar ul li:hover {
+	color: #1d91d4;
+	background-color: #f6f6f6;
+}
+.specGuide .guide-bar ul .active {
+  	color: #1d91d4;
+	background-color: #f6f6f6;
+}
+/* specGuide end */
+
+/* spec-tab begin */
+.spec-tab {
+	display: none;
+	overflow: hidden;
+	padding-top: 40px;
+	padding-bottom: 46px;
+	background-color: #f6f6f6;
+}
+.select {
+	display: block;
+}
+.spec-tab ul {
+	overflow: hidden;
+}
+.spec-tab ul li {
+	position: relative;
+	display: inline-block;
+	padding: 20px;
+	width: 340px;
+	height: 560px;
+	margin-top: 40px;
+	margin-right: 20px;
+	background-color: #fff;
+}
+.spec-tab ul li:hover {
+	box-shadow: 0px 2px 3px #c5c5c5;
+}
+.spec-tab ul li img {
+	width: 340px;
+	height: 240px;
+}
+.spec-tab ul li .tab-info {
+	margin-top: 18px;
+}
+.spec-tab ul li .tab-info h3 {
+	margin-top: 22px;
+	margin-bottom: 18px;
+	line-height: 28px;
+	font-size: 28px;
+	font-weight: normal;
+	color: #343d42;
+}
+.spec-tab ul li .tab-info span {
+    display: block;
+    height: 14px;
+    line-height: 14px;
+    font-size: 14px;
+	color: #849295;
+}
+.spec-tab ul li .tab-info span:nth-of-type(1) {
+	margin-bottom: 13px;
+}
+.spec-tab ul li .tab-info p {
+    overflow: hidden;
+    line-height: 28px;
+	padding: 22px 0;
+    font-size: 16px;
+    color: #343d42;
+}
+.spec-tab ul li .tab-info i {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	display: block;
+	color: #cacecf;
+	text-align: right;
+}
+.spec-tab ul li .tab-info i:hover {
+	opacity: .85;
+}
+.spec-tab ul li .tab-info i img {
+	width: 40px;
+	height: 40px;
+}
+.spec-tab ul li.big {
+	width: 100%;
+	height: 260px;
+}
+.spec-tab ul li.big img {
+
+}
+.spec-tab ul li.big .tab-info {
+	width: 790px;
+	margin-left: 27px;
+	margin-top: 0;
+}
+.spec-tab ul li.big i {
+	right: 70px;
+}
+/* spec-tab end */
+
+/* question begin */
+.question {
+    padding-top: 70px;
+	background-color: #fff;
+}
+.question h2 {
+	height: 38px;
+	background: url('../images/imagesWeizhuanye/title.png') no-repeat center -273px;
+}
+.question .question-detail {
+    padding: 23px 20px 82px;
+}
+.question .question-detail dl dt {
+    height: 20px;
+    line-height: 20px;
+	margin-top: 35px;
+	font-size: 20px;
+    color: #333c42;
+}
+.question .question-detail dl dd {
+	margin-top: 11px;
+	line-height: 24px;
+	font-size: 14px;
+	color: #859295;
+}
+.question .question-detail .ques-more {
+    display: block;
+	font-size: 14px;
+    margin-top: 40px;
+    color: #333c42;
+}
+/* question end */

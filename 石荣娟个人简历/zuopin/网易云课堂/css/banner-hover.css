@@ -1,0 +1,19 @@
+li,a,h3{margin: 0;padding: 0;font-family: "Arial","Hiragino Sans GB", 微软雅黑, "Helvetica", "sans-serif";cursor: pointer;}
+
+.banner-hover{width: 76%;height: 400px;position: absolute;right:15px;top:0;background: white;z-index: 1000;border-right: 1px solid #ccc;border-top: 1px solid #eee;border-bottom:1px solid #eee ;float: right;}
+.banner-hover1-L{width: 75%;height: 400px;}
+.banner-hover1-L>span{display: inline-block;width: 120px;height: 30px;line-height: 30px;border: 1px solid rgb(245,135,14);font-size: 10px;color: rgb(245,135,14);text-align: center;margin-left: 50px;margin-top: 30px;font-family: "Arial","Hiragino Sans GB", 微软雅黑, "Helvetica", "sans-serif";cursor: pointer;}
+.banner-hover1-L>span:nth-child(2){margin-left: 20px;}
+.banner-hover1-L>span:hover{background: rgb(245,135,14);color: white;}
+.banner-hover1-L>ul{width: 400px;height: 150px;margin-top: 20px;}
+.banner-hover1-L>ul>li{width: 600px;height: 50px;line-height: 50px;margin-left: 50px;font-size: 10px;}
+.banner-hover1-L>ul>li>a{display: inline-block;width: 80px;height: 50px;line-height: 50px;font-size: 9px;color: rgb(84,173,90);}
+.banner-hover1-L>ul>li>a:hover{text-decoration: underline;}
+.banner-hover1-L>ul>li>a:nth-child(1){margin-left: 20px;}
+.banner-hover1-R{width: 25%;height: 400px;position: absolute;right: 20px;top: 0;}
+.banner-hover1-R>h3{margin: 10px 10px 10px 0px;}
+.banner-hover1-R>a{display: inline-block;width: 170px;height: 30px;line-height: 30px;font-size: 10px;color: rgb(102,102,102);}
+.banner-hover1-R>a:hover{color: rgb(84,173,90);}
+.banner-hover1-R>img{width: 235px;height: 125px;margin: 5px;margin-left: 0;cursor: pointer;}
+.banner-hover2 .banner-hover1-L>ul>li{width: 650px;margin-left: 30px;}
+.banner-hover2 .banner-hover1-L>ul>li>a{width: 60px;height: 30px;line-height: 30px; word-break: normal;}

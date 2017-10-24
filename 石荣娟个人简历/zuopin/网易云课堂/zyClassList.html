@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>课程列表</title>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/zyClassList.css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	<script src="font/iconfont.js"></script>
+	<script src="js/jquery-1.11.1.js"></script>
+	<script src="js/zyClassList.js"></script>
+	
+
+	</style>
+</head>
+<body>
+	<header>
+		<div class="container head">
+			<div><a href="index.html"><img src="./images/zyClassList/logo3.png" alt=""></a></div>
+			<div>
+				<ul>
+					<li><a href="zyClass.html">找课程</a></li>
+					<li><a href="specIntro.html">微专业</a></li>
+					<li class='linKs'><a href="">下载app</a>
+						<div class='linK'>
+							<div><img src="./images/zyClassList/erweima.png" alt=""></div>
+							<div>
+								<p>扫码下载官方APP</p>
+								<div><img src="./images/zyClassList/download_icon.png" alt=""></div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<div id='lesson'>课程<span></span>
+					<div id='give'>提供方</div>
+				</div>
+				<input type="text" placeholder="搜索课程">
+				<div>
+					<svg class="icon" aria-hidden="true">
+					  <use xlink:href="#icon-sousuo"></use>
+					</svg>
+				</div>
+			</div>
+			<div>
+				<ul>
+					<li><a href="">我的学习</a></li>
+					<li><a href="">消息</a></li>
+					<li><a href="gwcstt.html">购物车</a></li>
+					<li><a href="about.html">登录/注册</a></li>
+					<li><a href=""><img src="./images/zyClassList/small.jpg" alt=""></a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<section>
+		<div class="container top">
+			<div class="top1">
+				<a href="index.html">首页&gt;</a>
+				<a href="index.html">全部课程&gt;</a>
+				<a href="index.html">编程开发</a>
+			</div>
+			<div class="top2">
+				<ul><!-- section .top .top2>ul>li>div #one -->
+					<li><a href="./zyClass.html">精选好课</a>
+						<div>
+							<ul>
+								<li><a href="">全部</a></li>
+								<li class="jxhk"><a href="">/HTML+CSS</a></li>
+								<li><a href="">/JavaScript</a></li>
+								<li><a href="">/HTML5</a></li>
+								<li><a href="">/jQuery</a></li>
+								<li><a href="">/Bootstrap</a></li>
+								<li><a href="">/AngularJS</a></li>
+								<li><a href="">/React</a></li>
+								<li><a href="">/Vue.js</a></li>
+								<li><a href="">/ExtJS</a></li>
+								<li><a href="">/开发框架</a></li>
+							</ul>
+						</div> 
+					</li>
+					<li><a href="#">编程语言</a>
+						<div>
+							<ul >
+								<li><a href="">全部</a></li>
+								<li><a href="">/ Python</a></li>
+								<li><a href="">/ PHP</a></li>
+								<li><a href="">/ Java</a></li>
+								<li><a href="">/ C</a></li>
+								<li><a href="">/ C++</a></li>
+								<li><a href="">/ C#</a></li>
+								<li><a href="">/ Swift</a></li>
+								<li><a href="">/ R</a></li>
+								<li><a href="">/ Git</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="jxhk"><a href="#">前端开发</a>
+						<div>
+							<ul >
+								<li><a href="">全部</a></li>
+								<li class="jxhk"><a href="">/HTML+CSS</a></li>
+								<li><a href="">/JavaScript</a></li>
+								<li><a href="">/HTML5</a></li>
+								<li><a href="">/jQuery</a></li>
+								<li><a href="">/Bootstrap</a></li>
+								<li><a href="">/AngularJS</a></li>
+								<li><a href="">/React</a></li>
+								<li><a href="">/Vue.js</a></li>
+								<li><a href="">/ExtJS</a></li>
+								<li><a href="">/开发框架</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">后端开发</a>
+						<div>
+							<ul > 
+								<li><a href="">全部</a></li> 
+				            	<li><a href="">/ Node.js</a></li>
+				            	<li><a href="">/ .NET</a></li>
+				            	<li><a href="">/ J2EE</a></li>
+				            	<li><a href="">/ Go</a></li>
+				            	<li><a href="">/ 开发实践</a></li>
+				            </ul>  
+						</div>
+					</li>
+					<li><a href="#">移动开发</a>
+						<div>
+							<ul >
+								<li><a href="">全部</a></li>
+								<li><a href="">/ iOS</a></li>
+								<li><a href="">/ Android</a></li>
+								<li><a href="">/ Windows Phone</a></li>
+								<li><a href="">/ 手游开发</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">数据处理</a>
+						<div>
+							<ul >
+								<li><a href="">全部</a></li>
+						    	<li><a href="">/ 大数据</a></li>
+						    	<li><a href="">/ MySQL</a></li>
+						    	<li><a href="">/ Oracle</a></li>
+						    	<li><a href="">/ SQL Server</a></li>
+						    </ul>
+						</div>
+					</li>
+					<li><a href="#">系统/硬件</a>
+						<div>
+							<ul >
+								<li><a href="">全部</a></li>
+								<li><a href="">/ 信息安全</a></li>
+								<li><a href="">/ 操作系统</a></li>
+								<li><a href="">/ 物联网</a></li>
+								<li><a href="">/ 运维管理</a></li>
+								<li><a href="">/ 硬件开发</a></li>
+							</ul>    
+						</div>
+					</li>
+				</ul>
+			</div>	
+		</div>
+		
+		<div class="bodykc">
+			<div class="container aaa">
+				<ul>
+					<li class="jxhk"><a href="">全部</a></li>
+					<li><a href="">随到随学</a></li>
+					<li><a href="">正在开课</a></li>
+					<li><a href="">即将开始</a></li>
+				</ul>
+				<ul>
+					<li class="jxhk"><a href="">综合</a></li>
+					<li>-</li>
+					<li><a href="">好评</a></li>
+					<li>-</li>
+					<li><a href="">最新</a></li>
+					<li class="price"><a href="">价格</a><div></div>
+						<ul>
+							<li class="active"><a>全部</a><span>7</span></li>
+							<li><a>免费</a><span>7</span></li>
+							<li><a>付费</a><span>7</span></li>
+						</ul>
+					</li>
+				</ul>
+				
+			</div>
+			<div class="container bbb">
+				<ul>
+					<li>
+						<div class="img-area"><img class="my-photo" alt="loading" data-src="./images/zyClassList/11.jpg" alt=""></div>
+						<p>8小时学会HTML网页开发</p>
+						<p>布尔教育</p>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							4.8(219157人学过)</p>
+						<p>免费</p>	
+					</li>
+					<li>
+						<div class="img-area"><img class="my-photo" alt="loading" data-src="./images/zyClassList/12.jpg" alt=""></div>
+						<p>oeasy html5、css3网页设计与制作(html5教程)</p>
+						<p>oeasy教excelwordppt和ps</p>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							4.8(191157人学过)</p>
+						<p>免费</p>	
+					</li>
+					<li>
+						<div class="img-area"><img class="my-photo" alt="loading" data-src="./images/zyClassList/13.jpg" alt=""></div>
+						<p>HTML5网页开发</p>
+						<p>布尔教育</p>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							4.8(219157人学过)</p>
+						<p>免费</p>	
+					</li>
+					<li>
+						<div class="img-area"><img class="my-photo" alt="loading" data-src="./images/zyClassList/14.jpg" alt=""></div>
+						<p>HTML网页开发(第一季)</p>
+						<p>布尔教育</p>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							4.8(219237人学过)</p>
+						<p>免费</p>	
+					</li>
+					<li>
+						<div class="img-area"><img class="my-photo" alt="loading" data-src="./images/zyClassList/15.jpg" alt=""></div>
+						<p>h5/css3/web前端开发</p>
+						<p>精品教育</p>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							4.8(211157人学过)</p>
+						<p>免费</p>	
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<div class="img-area"><img class="my-photo" alt="loading" data-src="./images/zyClassList/21.jpg" alt=""></div>
+						<p>8小时学会HTML网页开发</p>
+						<p>布尔教育</p>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							4.8(219157人学过)</p>
+						<p>免费</p>	
+					</li>
+					<li>
+						<div class="img-area"><img class="my-photo" alt="loading" data-src="./images/zyClassList/22.jpg" alt=""></div>
+						<p>oeasy html5、css3网页设计与制作(html5教程)</p>
+						<p>oeasy教excelwordppt和ps</p>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							4.8(191157人学过)</p>
+						<p>免费</p>	
+					</li>
+					<li>
+						<div class="img-area"><img class="my-photo" alt="loading" data-src="./images/zyClassList/23.jpg" alt=""></div>
+						<p>HTML5网页开发</p>
+						<p>布尔教育</p>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							4.8(219157人学过)</p>
+						<p>免费</p>	
+					</li>
+					<li>
+						<div class="img-area"><img class="my-photo" alt="loading" data-src="./images/zyClassList/24.jpg" alt=""></div>
+						<p>HTML网页开发(第一季)</p>
+						<p>布尔教育</p>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							4.8(219237人学过)</p>
+						<p>免费</p>	
+					</li>
+					<li>
+						<div class="img-area"><img class="my-photo" alt="loading" data-src="./images/zyClassList/25.jpg" alt=""></div>
+						<p>h5/css3/web前端开发</p>
+						<p>精品教育</p>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							4.8(211157人学过)</p>
+						<p>免费</p>	
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<div class="img-area"><img class="my-photo" alt="loading" data-src="./images/zyClassList/35.jpg" alt=""></div>
+						<p>8小时学会HTML网页开发</p>
+						<p>布尔教育</p>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							4.8(219157人学过)</p>
+						<p>免费</p>	
+					</li>
+					<li>
+						<div class="img-area"><img class="my-photo" alt="loading" data-src="./images/zyClassList/31.jpg" alt=""></div>
+						<p>oeasy html5、css3网页设计与制作(html5教程)</p>
+						<p>oeasy教excelwordppt和ps</p>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							4.8(191157人学过)</p>
+						<p>免费</p>	
+					</li>
+					<li>
+						<div class="img-area"><img class="my-photo" alt="loading" data-src="./images/zyClassList/32.jpg" alt=""></div>
+						<p>HTML5网页开发</p>
+						<p>布尔教育</p>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							4.8(219157人学过)</p>
+						<p>免费</p>	
+					</li>
+					<li>
+						<div class="img-area"><img class="my-photo" alt="loading" data-src="./images/zyClassList/33.jpg" alt=""></div>
+						<p>HTML网页开发(第一季)</p>
+						<p>布尔教育</p>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							4.8(219237人学过)</p>
+						<p>免费</p>	
+					</li>
+					<li>
+						<div class="img-area"><img class="my-photo" alt="loading" data-src="./images/zyClassList/34.jpg" alt=""></div>
+						<p>h5/css3/web前端开发</p>
+						<p>精品教育</p>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							4.8(211157人学过)</p>
+						<p>免费</p>	
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<div class="img-area"><img class="my-photo" alt="loading" data-src="./images/zyClassList/41.jpg" alt=""></div>
+						<p>8小时学会HTML网页开发</p>
+						<p>布尔教育</p>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							4.8(219157人学过)</p>
+						<p>免费</p>	
+					</li>
+					<li>
+						<div class="img-area"><img class="my-photo" alt="loading" data-src="./images/zyClassList/42.jpg" alt=""></div>
+						<p>oeasy html5、css3网页设计与制作(html5教程)</p>
+						<p>oeasy教excelwordppt和ps</p>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							4.8(191157人学过)</p>
+						<p>免费</p>	
+					</li>
+					<li>
+						<div class="img-area"><img class="my-photo" alt="loading" data-src="./images/zyClassList/43.jpg" alt=""></div>
+						<p>HTML5网页开发</p>
+						<p>布尔教育</p>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							4.8(219157人学过)</p>
+						<p>免费</p>	
+					</li>
+					<li>
+						<div class="img-area"><img class="my-photo" alt="loading" data-src="./images/zyClassList/44.jpg" alt=""></div>
+						<p>HTML网页开发(第一季)</p>
+						<p>布尔教育</p>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							4.8(219237人学过)</p>
+						<p>免费</p>	
+					</li>
+					<li>
+						<div class="img-area"><img class="my-photo" alt="loading" data-src="./images/zyClassList/45.jpg" alt=""></div>
+						<p>h5/css3/web前端开发</p>
+						<p>精品教育</p>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							4.8(211157人学过)</p>
+						<p>免费</p>	
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<div class="img-area"><img class="my-photo" alt="loading" data-src="./images/zyClassList/51.jpg" alt=""></div>
+						<p>8小时学会HTML网页开发</p>
+						<p>布尔教育</p>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							4.8(219157人学过)</p>
+						<p>免费</p>	
+					</li>
+					<li>
+						<div class="img-area"><img class="my-photo" alt="loading" data-src="./images/zyClassList/52.jpg" alt=""></div>
+						<p>oeasy html5、css3网页设计与制作(html5教程)</p>
+						<p>oeasy教excelwordppt和ps</p>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							4.8(191157人学过)</p>
+						<p>免费</p>	
+					</li>
+					<li>
+						<div class="img-area"><img class="my-photo" alt="loading" data-src="./images/zyClassList/53.jpg" alt=""></div>
+						<p>HTML5网页开发</p>
+						<p>布尔教育</p>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							4.8(219157人学过)</p>
+						<p>免费</p>	
+					</li>
+					<li>
+						<div class="img-area"><img class="my-photo" alt="loading" data-src="./images/zyClassList/54.jpg" alt=""></div>
+						<p>HTML网页开发(第一季)</p>
+						<p>布尔教育</p>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							4.8(219237人学过)</p>
+						<p>免费</p>	
+					</li>
+					<li>
+						<div class="img-area"><img class="my-photo" alt="loading" data-src="./images/zyClassList/55.jpg" alt=""></div>
+						<p>h5/css3/web前端开发</p>
+						<p>精品教育</p>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							4.8(211157人学过)</p>
+						<p>免费</p>	
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<div class="img-area"><img class="my-photo" alt="loading" data-src="./images/zyClassList/61.jpg" alt=""></div>
+						<p>8小时学会HTML网页开发</p>
+						<p>布尔教育</p>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							4.8(219157人学过)</p>
+						<p>免费</p>	
+					</li>
+					<li>
+						<div class="img-area"><img class="my-photo" alt="loading" data-src="./images/zyClassList/62.jpg" alt=""></div>
+						<p>oeasy html5、css3网页设计与制作(html5教程)</p>
+						<p>oeasy教excelwordppt和ps</p>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							4.8(191157人学过)</p>
+						<p>免费</p>	
+					</li>
+					<li>
+						<div class="img-area"><img class="my-photo" alt="loading" data-src="./images/zyClassList/63.jpg" alt=""></div>
+						<p>HTML5网页开发</p>
+						<p>布尔教育</p>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							4.8(219157人学过)</p>
+						<p>免费</p>	
+					</li>
+					<li>
+						<div class="img-area"><img class="my-photo" alt="loading" data-src="./images/zyClassList/64.jpg" alt=""></div>
+						<p>HTML网页开发(第一季)</p>
+						<p>布尔教育</p>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							4.8(219237人学过)</p>
+						<p>免费</p>	
+					</li>
+					<li>
+						<div class="img-area"><img class="my-photo" alt="loading" data-src="./images/zyClassList/65.jpg" alt=""></div>
+						<p>h5/css3/web前端开发</p>
+						<p>精品教育</p>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							4.8(211157人学过)</p>
+						<p>免费</p>	
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<div class="img-area"><img class="my-photo" alt="loading" data-src="./images/zyClassList/71.jpg" alt=""></div>
+						<p>8小时学会HTML网页开发</p>
+						<p>布尔教育</p>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							4.8(219157人学过)</p>
+						<p>免费</p>	
+					</li>
+					<li>
+						<div class="img-area"><img class="my-photo" alt="loading" data-src="./images/zyClassList/72.jpg" alt=""></div>
+						<p>oeasy html5、css3网页设计与制作(html5教程)</p>
+						<p>oeasy教excelwordppt和ps</p>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							4.8(191157人学过)</p>
+						<p>免费</p>	
+					</li>
+					<li>
+						<div class="img-area"><img class="my-photo" alt="loading" data-src="./images/zyClassList/73.jpg" alt=""></div>
+						<p>HTML5网页开发</p>
+						<p>布尔教育</p>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							4.8(219157人学过)</p>
+						<p>免费</p>	
+					</li>
+					<li>
+						<div class="img-area"><img class="my-photo" alt="loading" data-src="./images/zyClassList/74.jpg" alt=""></div>
+						<p>HTML网页开发(第一季)</p>
+						<p>布尔教育</p>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							4.8(219237人学过)</p>
+						<p>免费</p>	
+					</li>
+					<li>
+						<div class="img-area"><img class="my-photo" alt="loading" data-src="./images/zyClassList/75.jpg" alt=""></div>
+						<p>h5/css3/web前端开发</p>
+						<p>精品教育</p>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							4.8(211157人学过)</p>
+						<p>免费</p>	
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<div class="img-area"><img class="my-photo" alt="loading" data-src="./images/zyClassList/85.jpg" alt=""></div>
+						<p>8小时学会HTML网页开发</p>
+						<p>布尔教育</p>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							4.8(219157人学过)</p>
+						<p>免费</p>	
+					</li>
+					<li>
+						<div class="img-area"><img class="my-photo" alt="loading" data-src="./images/zyClassList/81.jpg" alt=""></div>
+						<p>oeasy html5、css3网页设计与制作(html5教程)</p>
+						<p>oeasy教excelwordppt和ps</p>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							4.8(191157人学过)</p>
+						<p>免费</p>	
+					</li>
+					<li>
+						<div class="img-area"><img class="my-photo" alt="loading" data-src="./images/zyClassList/82.jpg" alt=""></div>
+						<p>HTML5网页开发</p>
+						<p>布尔教育</p>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							4.8(219157人学过)</p>
+						<p>免费</p>	
+					</li>
+					<li>
+						<div class="img-area"><img class="my-photo" alt="loading" data-src="./images/zyClassList/83.jpg" alt=""></div>
+						<p>HTML网页开发(第一季)</p>
+						<p>布尔教育</p>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							4.8(219237人学过)</p>
+						<p>免费</p>	
+					</li>
+					<li>
+						<div class="img-area"><img class="my-photo" alt="loading" data-src="./images/zyClassList/84.jpg" alt=""></div>
+						<p>h5/css3/web前端开发</p>
+						<p>精品教育</p>
+						<p>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							4.8(211157人学过)</p>
+						<p>免费</p>	
+					</li>
+				</ul>
+				<ol id="app">
+					<li>首页</li>
+					<li>上一页</li>
+					<li class="active">1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>6</li>
+					<li>7</li>
+					<li>下一页</li>
+				</ol>
+				
+			</div>
+		</div>
+	</section>
+
+	<article id='article'>
+		<ul>
+			<li>
+				<a href="">
+					<svg class="icon" aria-hidden="true">
+				 		<use xlink:href="#icon-xiaoxi"></use>
+					</svg>
+				</a>
+			</li>
+			<hr>
+			<li class='weixin'>
+				<div><img src="./images/zyClassList/erweima.png" alt="" width=100%></div>
+				<a href="">
+					<svg class="icon" aria-hidden="true">
+				 		<use xlink:href="#icon-shouji"></use>
+					</svg>
+				</a>
+			</li>
+			<hr>
+			<li class="toTop1">
+				<a >
+					<svg class="icon" aria-hidden="true">
+				 		<use xlink:href="#icon-u-arrow3-right-copy"></use>
+					</svg>
+				</a>
+			</li>
+		</ul>
+	</article>
+<!-- 	<section>
+	<div class="container section"></div>
+</section> -->
+	<footer>
+		<div class="container foot">
+			<div>
+				<div><img src="./images/zyClassList/logoFoot.png" alt=""></div>
+				<p>网易公司(163.com)旗下实用技能学习平台。与优秀讲师、专业机构、院校合作，为您提供海量优质课程，以及创新的在线学习体验，帮助您获得全新的个人发展和能力提升。</p>
+				<div class="view">
+					<p>关注我们:</p>
+					<ul>
+						<li><a href=""></a></li>
+						<li><a href=""></a></li>
+						<li><a href=""></a></li>
+						<li class="weixin">
+						<div><img src="./images/zyClassList/erweima.png" alt="" width=100%></div>
+						<a href=""></a></li>
+					</ul>
+				</div>
+				<p>©1997-2017 网易公司 版权所有</p>
+			</div>
+			<div>
+				<ul>
+					<li><a href="">关于我们</a></li>
+					<li><a href="">联系我们</a></li>
+					<li><a href="">帮助中心</a></li>
+					<li><a href="">内容招募</a></li>
+					<li><a href="">意见反馈</a></li>
+					<li><a href="">企业服务</a></li>
+					<li><a href="">中国大学MOOC</a></li>
+				</ul>
+				<div>
+					<p>移动APP</p>
+					<ul>
+						<li><a href=""></a></li>
+						<li><a href=""></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script>
+        // window.onload=checkImgs;
+        //window.onscroll = throttle(checkImgs);
+
+        /*function isInSight(el) {
+            const bound = el.getBoundingClientRect();
+            const clientHeight = window.innerHeight;
+            //如果只考虑向下滚动加载
+            const clientWidth = window.innerWeight;
+            return bound.top <= clientHeight - 200;
+        }
+        function checkImgs() {
+            const imgs = document.querySelectorAll('.my-photo');
+            Array.from(imgs).forEach(el => {
+                if (isInSight(el)) {
+                loadImg(el);
+            }
+        })
+        }
+
+        function loadImg(el) {
+            if (!el.src) {
+                const source = el.dataset.src;
+                el.src = source;
+            }
+        }
+        function throttle(fn, mustRun = 500) {
+            const timer = null;
+            let previous = null;
+            return function() {
+                const now = new Date();
+                const context = this;
+                const args = arguments;
+                if (!previous) {
+                    previous = now;
+                }
+                const remaining = now - previous;
+                if (mustRun && remaining >= mustRun) {
+                    fn.apply(context, args);
+                    previous = now;
+                }
+            }
+        }*/
+	</script>
+	<script>
+		window.onscroll=function(){
+			if(document.body.scrollTop||document.documentElement.scrollTop>0)
+				document.getElementById('article').style.display='block';
+			else
+				document.getElementById('article').style.display='none';
+		}
+		function isInSight(el) {
+		            const bound = el.getBoundingClientRect();
+		            const clientHeight = window.innerHeight;
+		            //如果只考虑向下滚动加载
+		            const clientWidth = window.innerWeight;
+		            return bound.top <= clientHeight - 200;
+		        }
+		        function checkImgs() {
+		            const imgs = document.querySelectorAll('.my-photo');
+		            Array.from(imgs).forEach(el => {
+		                if (isInSight(el)) {
+		                loadImg(el);
+		            }
+		        })
+		        }
+
+		        function loadImg(el) {
+		            if (!el.src) {
+		                const source = el.dataset.src;
+		                el.src = source;
+		            }
+		        }
+		        function throttle(fn, mustRun = 500) {
+		            const timer = null;
+		            let previous = null;
+		            return function() {
+		                const now = new Date();
+		                const context = this;
+		                const args = arguments;
+		                if (!previous) {
+		                    previous = now;
+		                }
+		                const remaining = now - previous;
+		                if (mustRun && remaining >= mustRun) {
+		                    fn.apply(context, args);
+		                    previous = now;
+		                }
+		            }
+		        }
+		window.onload=function(){
+			checkImgs();
+			var oArticle=document.getElementById('article');
+			var qLi=oArticle.getElementsByTagName('li');
+			var weixin=document.getElementsByClassName('weixin');
+			var erweima1=weixin[0].getElementsByTagName('div');
+			var erweima2=weixin[1].getElementsByTagName('div');
+			var xamoDiv=document.getElementById('lesson');
+			var give=document.getElementById('give');
+			var linKs=document.getElementsByClassName('linKs')[0];
+			var linK=linKs.getElementsByClassName('linK');
+			var timer=null;
+			linKs.onmouseover=function(){
+				linK[0].style.display='block';
+			}
+			linKs.onmouseout=function(){
+				timer=setTimeout(function(){
+					linK[0].style.display='none';
+				},1000)
+			}
+			linK[0].onmouseover=function(){
+				clearTimeout(timer);
+				linK[0].style.display='block';
+			}
+			linK[0].onmouseout=function(){
+				linK[0].style.display='none';
+			}
+			var n=0;
+			xamoDiv.onclick=function(){
+				if(n==0){
+					give.style.display='block';
+					n++;
+				}
+				else{
+					give.style.display='none';
+					n=0;
+				}
+			}
+			weixin[0].onmouseover=function(){
+				erweima1[0].style.display='block';
+			}
+			weixin[0].onmouseout=function(){
+				erweima1[0].style.display='none';
+			}
+			weixin[1].onmouseover=function(){
+				erweima2[0].style.display='block';
+			}
+			weixin[1].onmouseout=function(){
+				erweima2[0].style.display='none';
+			}
+			/*qLi[2].onclick=function(){
+				window.scrollTo('0','0');
+				oArticle.style.display='none';
+			}*/
+		}
+
+	</script>
+	<script>
+        window.onscroll=function(){
+            throttle(checkImgs());
+            if(document.body.scrollTop||document.documentElement.scrollTop>0)
+                document.getElementById('article').style.display='block';
+            else
+                document.getElementById('article').style.display='none';
+        }
+	</script>
+	<script>
+		var oArticle=document.getElementById('article');
+		var qLi=oArticle.getElementsByTagName('li');
+		var weixin=document.getElementsByClassName('weixin');
+		var erweima1=weixin[0].getElementsByTagName('div');
+		var erweima2=weixin[1].getElementsByTagName('div');
+		weixin[0].onmouseover=function(){
+			erweima1[0].style.display='block';
+		}
+		weixin[0].onmouseout=function(){
+			erweima1[0].style.display='none';
+		}
+		weixin[1].onmouseover=function(){
+			erweima2[0].style.display='block';
+		}
+		weixin[1].onmouseout=function(){
+			erweima2[0].style.display='none';
+		}
+		//var top=document.body.scrollTop();
+
+		/*qLi[2].onclick=function(){
+			window.scrollTo('0','0');
+			oArticle.style.display='none';
+		}*/
+	</script>
+
+	
+</body>
+</html>
+

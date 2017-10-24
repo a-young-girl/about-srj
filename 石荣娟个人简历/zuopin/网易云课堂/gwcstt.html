@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>网易云课堂-购物车</title>
+	<link rel="stylesheet" href="css/stt-index.css">
+	<script src="images/font/iconfont.js"></script>
+	 <link href="images/imgxq/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+	<!-- <script src='js/common.js'></script> -->
+	<script src='js/pay.js'></script>
+</head>
+<body>
+	<header>
+		<div class="container head">
+			<div><a href="index.html"><img src="images/logo3.png" alt=""></a></div>
+			<div>
+				<ul>
+					<li><a href="zyClass.html">找课程</a></li>
+					<li><a href="specIntro.html">微专业</a></li>
+					<li class='linKs'><a href="">下载app</a>
+						<div class='linK'>
+							<div><img src="images/erweima.png" alt=""></div>
+							<div>
+								<p>扫码下载官方APP</p>
+								<div><img src="images/download_icon.png" alt=""></div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<div id='lesson'>课程<span></span>
+					<div id='give'>提供方</div>
+				</div>
+				<input type="text" placeholder="搜索课程">
+				<div>
+					<svg class="icon" aria-hidden="true">
+					  <use xlink:href="#icon-sousuo"></use>
+					</svg>
+				</div>
+			</div>
+			<div>
+				<ul>
+					<li><a href="">我的学习</a></li>
+					<li><a href="">消息</a></li>
+					<li><a href="#">购物车</a></li>
+					<li><a href="about.html">登录/注册</a></li>
+					<li><a href=""><img src="images/small.jpg" alt=""></a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<article id='article'>
+		<ul>
+			<li>
+				<a href="">
+					<svg class="icon" aria-hidden="true">
+				 		<use xlink:href="#icon-xiaoxi"></use>
+					</svg>
+				</a>
+			</li>
+			<hr>
+			<li class='weixin'>
+				<div><img src="images/erweima.png" alt="" width=100%></div>
+				<a href="">
+					<svg class="icon" aria-hidden="true">
+				 		<use xlink:href="#icon-shouji"></use>
+					</svg>
+				</a>
+			</li>
+			<hr>
+			<li>
+				<a href="" onClick="toTop()">
+					<svg class="icon" aria-hidden="true">
+				 		<use xlink:href="#icon-u-arrow3-right-copy"></use>
+					</svg>
+				</a>
+			</li>
+		</ul>
+	</article>
+	<section class="shopping container">
+		<div class="header1">
+			<p>我的购物车</p>
+		</div>
+		<div class="xuan1">
+			<input type="checkbox" class="checkbox">
+			<ul id="list">
+				<li>全选</li>
+				<li>课程名称</li>
+				<li>学期或课程有效期</li>
+				<li>单价（元）</li>
+			</ul>
+		</div>
+		<div class="kongbai"></div>
+		<div class="xuan2">
+			<input type="checkbox" class="checkbox">
+			<p>机构</p>
+		</div>
+		<div id="row">
+			<input type="checkbox" class="checkbox">
+			<img src="images/stt_images/shu.jpg" alt="">
+			<span>JavaScript课程</span>
+			<ul>
+				<li>永久有效</li>
+				<li><em id="unit">100</em></li>
+				<li><input type="button" value="-" class="button">
+					<span id="quantity">0</span>
+					<input type="button" value="+" class="button">
+				</li>
+				<li><a href="wxstt.html" onclick="return confirm('确定删除这件商品吗?')"><img src="images/stt_images/16.png" alt=""></a></li>
+			</ul>
+		</div>
+		<div class="totalct">
+			<div class="xiaoji">
+			该讲师小计：￥<strong id="subtotal">0</strong>元
+			</div>
+		</div>
+			<div class="last">
+				<input type="checkbox" class="checkbox">
+				<p>全选</p>
+				<div id="two_1">
+					<div id="all">合计:<span id="priz">￥0.00</span></div>
+					<div id="beizhu">(若购买享有优惠，相应金额在订单结算页面减扣)</div>
+				</div>
+				<a href="jsstt.html" id="jiesuan">去结算</a>
+			</div>
+	</section>
+	</div>
+	<footer>
+		<div class="container foot">
+			<div>
+				<div><img src="images/logoFoot.png" alt=""></div>
+				<p>网易公司(163.com)旗下实用技能学习平台。与优秀讲师、专业机构、院校合作，为您提供海量优质课程，以及创新的在线学习体验，帮助您获得全新的个人发展和能力提升。</p>
+				<div class="view">
+					<p>关注我们:</p>
+					<ul>
+						<li><a href=""></a></li>
+						<li><a href=""></a></li>
+						<li><a href=""></a></li>
+						<li class="weixin">
+						<div><img src="images/erweima.png" alt="" width=100%></div>
+						<a href=""></a></li>
+					</ul>
+				</div>
+				<p>©1997-2017 网易公司 版权所有</p>
+			</div>
+			<div>
+				<ul>
+					<li><a href="">关于我们</a></li>
+					<li><a href="">联系我们</a></li>
+					<li><a href="">帮助中心</a></li>
+					<li><a href="">内容招募</a></li>
+					<li><a href="">意见反馈</a></li>
+					<li><a href="">企业服务</a></li>
+					<li><a href="">中国大学MOOC</a></li>
+				</ul>
+				<div>
+					<p>移动APP</p>
+					<ul>
+						<li><a href=""></a></li>
+						<li><a href=""></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

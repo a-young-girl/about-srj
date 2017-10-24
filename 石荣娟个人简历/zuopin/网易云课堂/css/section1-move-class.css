@@ -1,0 +1,10 @@
+span{cursor: pointer;}
+.class-section1 .move-class{width: 100%;height: 110px;background:white;position: relative;overflow: hidden;border: 1px solid #eee;}
+.class-section1 .move-class>span{display: inline-block;width: 20px;height: 50px;line-height: 50px;text-align: center;background: #eee;border-radius: 5px;}
+.class-section1 .move-class>span:nth-child(1){position: absolute;left: 0px;top: 30px;}
+.class-section1 .move-class>span:nth-child(2){position: absolute;right: 0px;top: 30px;}
+.class-section1 .move-class>ul{width: 200%;height: 110px;}
+.class-section1 .move-class>ul>li{width: 10%;height: 110px;float: left;text-align: center;}
+.class-section1 .move-class>ul{display: inline-block;height: 30px;line-height: 15px;margin-top: 30px; }
+.class-section1 .move-class>ul>li>a>span{}
+.class-section1 .move-class>ul>li>hr{-webkit-transform: rotate(90deg);-moz-transform: rotate(90deg);-ms-transform: rotate(90deg);-o-transform: rotate(90deg);transform: rotate(90deg);width: 6%;background-color:#ccc;height: 1px;border: none;margin-bottom: 0px;}
